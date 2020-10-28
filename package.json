@@ -1,0 +1,24 @@
+{
+  "name": "landingong",
+  "version": "1.0.0",
+  "description": "<h1 align=\"center\">ONGFrontenders</h1>",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/style.css -o public/style.css",
+    "dev": "live-server public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/magentateam/landingOng.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/magentateam/landingOng/issues"
+  },
+  "homepage": "https://github.com/magentateam/landingOng#readme",
+  "dependencies": {
+    "live-server": "^1.2.1",
+    "tailwindcss": "^1.9.6"
+  }
+}

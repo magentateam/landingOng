@@ -1,0 +1,27 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+.primary-gradient {
+    background: linear-gradient(266.42deg, theme('colors.gradients.primary.1') 0%,  theme('colors.gradients.primary.2') 100%);
+}
+
+
+.secondary-gradient {
+    background: linear-gradient(45deg, theme('colors.gradients.secondary.1') 0%, theme('colors.gradients.secondary.2') 100%);
+
+}
+.card{
+    @apply bg-white rounded shadow-md mx-auto mb-2 w-4/5;
+}
+
+.header, .footer {
+    @apply primary-gradient h-16;
+}
+
+.subscribe-button {
+    @apply secondary-gradient text-white p-2 rounded;
+}
