@@ -22372,7 +22372,6 @@ video {
 
 .header, .footer {
   background: linear-gradient(266.42deg, #7129E4 0%,  #9B51E0 100%);
-  height: 4rem;
 }
 
 .subscribe-button {
@@ -22380,7 +22379,6 @@ video {
   --text-opacity: 1;
   color: #fff;
   color: rgba(255, 255, 255, var(--text-opacity));
-  padding: 0.5rem;
   border-radius: 0.25rem;
 }
 
