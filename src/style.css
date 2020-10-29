@@ -19,9 +19,9 @@
 }
 
 .header, .footer {
-    @apply primary-gradient h-16;
+    @apply primary-gradient ;
 }
 
 .subscribe-button {
-    @apply secondary-gradient text-white p-2 rounded;
+    @apply secondary-gradient text-white rounded;
 }
