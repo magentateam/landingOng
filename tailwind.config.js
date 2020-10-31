@@ -21,6 +21,9 @@ module.exports = {
           },
         },
       },
+      fontFamily: {
+        titulo:['Domine']
+      }
     },
   },
   variants: {},
