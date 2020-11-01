@@ -22,8 +22,10 @@ module.exports = {
         },
       },
       fontFamily: {
-        titulo:['Domine']
-      }
+        domine: ["Domine"],
+        trispace: ["Trispace"],
+        roboto: ["Roboto"],
+      },
     },
   },
   variants: {},
