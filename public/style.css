@@ -1,4 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@100;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Trispace:wght@100;400;700&display=swap');
 
 @import "./background.css";
 
@@ -10777,8 +10781,16 @@ video {
   font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
 }
 
-.font-titulo{
+.font-domine{
   font-family: Domine;
+}
+
+.font-trispace{
+  font-family: Trispace;
+}
+
+.font-roboto{
+  font-family: Roboto;
 }
 
 .font-hairline{
@@ -32583,8 +32595,16 @@ video {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .sm\:font-titulo{
+  .sm\:font-domine{
     font-family: Domine;
+  }
+
+  .sm\:font-trispace{
+    font-family: Trispace;
+  }
+
+  .sm\:font-roboto{
+    font-family: Roboto;
   }
 
   .sm\:font-hairline{
@@ -54287,8 +54307,16 @@ video {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .md\:font-titulo{
+  .md\:font-domine{
     font-family: Domine;
+  }
+
+  .md\:font-trispace{
+    font-family: Trispace;
+  }
+
+  .md\:font-roboto{
+    font-family: Roboto;
   }
 
   .md\:font-hairline{
@@ -75991,8 +76019,16 @@ video {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .lg\:font-titulo{
+  .lg\:font-domine{
     font-family: Domine;
+  }
+
+  .lg\:font-trispace{
+    font-family: Trispace;
+  }
+
+  .lg\:font-roboto{
+    font-family: Roboto;
   }
 
   .lg\:font-hairline{
@@ -97695,8 +97731,16 @@ video {
     font-family: Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   }
 
-  .xl\:font-titulo{
+  .xl\:font-domine{
     font-family: Domine;
+  }
+
+  .xl\:font-trispace{
+    font-family: Trispace;
+  }
+
+  .xl\:font-roboto{
+    font-family: Roboto;
   }
 
   .xl\:font-hairline{
