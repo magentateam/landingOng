@@ -1,0 +1,40 @@
+
+.background-images .cross {
+    top: 86px;
+    right: 46px;
+}
+
+.background-images .left-rectangle {
+    top: -350px;
+    left: 0;
+}
+
+.background-images .right-rectangle {
+    top: 1000px;
+    right: 0;
+}
+
+.background-images .top-halfmoon {
+    top: 246px;
+    left: 44px;
+}
+
+.background-images .bottom-halfmoon {
+    top: 2300px;
+    left: 66px;
+}
+
+.background-images .left-waves {
+    top: 1000px;
+    left: 0;
+}
+
+.background-images .right-waves {
+    top: 900px;
+    right:0;
+}
+
+.background-images .grid {
+    top: 1300px;
+    right:0;
+}

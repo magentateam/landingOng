@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap');
+@import "./background.css";
 
 @tailwind base;
 
@@ -8,23 +9,26 @@
 
 
 .primary-gradient {
-    background: linear-gradient(266.42deg, theme('colors.gradients.primary.1') 0%,  theme('colors.gradients.primary.2') 100%);
+    background: linear-gradient(266.42deg, theme('colors.gradients.primary.1') 0%, theme('colors.gradients.primary.2') 100%);
 }
-
 
 .secondary-gradient {
     background: linear-gradient(45deg, theme('colors.gradients.secondary.1') 0%, theme('colors.gradients.secondary.2') 100%);
-
 }
-.card{
+
+.card {
     @apply bg-white rounded shadow-md mx-auto mb-2 w-4/5;
 }
 
-.header, .footer {
-    @apply primary-gradient ;
+.header,
+.footer {
+    @apply primary-gradient;
 }
 
 .subscribe-button {
     @apply secondary-gradient text-white rounded;
 }
 
+.background-images {
+    z-index: -1;
+}
