@@ -22,9 +22,18 @@ module.exports = {
         },
       },
       fontFamily: {
+<<<<<<< HEAD
         domine: ["Domine"],
         trispace: ["Trispace"],
         roboto: ["Roboto"],
+=======
+        titulo:['Domine'],
+        'linksNav': ['Roboto', 'sans-serif'],
+        'headerTitle': ['Trispace', 'sans-serif']
+      },
+      fontSize: {
+        '7xl': ['8rem', 'responsive'],
+>>>>>>> 7e31220... Header
       },
     },
   },
