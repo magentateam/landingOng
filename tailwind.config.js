@@ -26,6 +26,9 @@ module.exports = {
         trispace: ["Trispace"],
         roboto: ["Roboto"],
       },
+      fontSize: {
+        "7xl": ["8rem", "responsive"],
+      },
     },
   },
   variants: {},
