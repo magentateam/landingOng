@@ -7,16 +7,111 @@
     <title>Magenta Team</title>
   </head>
   <body>
-   
-    <div class="header">
-      <div class="logo"></div>
-      <div class="hamburguer"></div>
-    </div>
-    <div class="background-video">
-      <div>Discover our version</div>
-      <div>Watch the video</div>
-    </div>
-    <div>Code in magenta</div>
+    <header>
+      <!--Navbar-->
+      <nav
+        id="header"
+        class="absolute flex items-center justify-between flex-wrap bg-primary fixed w-full z-10"
+      >
+        <div
+          class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0"
+        >
+          <div class="flex items-center">
+            <a href="#">
+              <img
+                src="./img/logo-white.svg"
+                class="h-24 w-24 inline-block fill-current"
+              />
+            </a>
+          </div>
+
+          <!--toggle menu-->
+          <div class="block lg:hidden pr-4">
+            <button
+              id="nav-toggle"
+              class="flex items-center px-3 py-2 border rounded text-white-500 border-white-600 hover:text-gray-800 hover:border-white-500 appearance-none focus:outline-none"
+            >
+              <svg
+                class="fill-current h-3 w-3 white"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              </svg>
+            </button>
+          </div>
+          <!--toggle menu end-->
+
+          <div
+            class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 text-black lg:p-0 z-20"
+            id="nav-content"
+          >
+            <ul class="list-reset lg:flex justify-end flex-1 items-center">
+              <li class="mr-3">
+                <a
+                  class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-2xl font-roboto"
+                  href="#cursos"
+                  >Cursos</a
+                >
+              </li>
+              <li class="mr-3">
+                <a
+                  class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-2xl font-roboto"
+                  href="#eventos"
+                  >Eventos</a
+                >
+              </li>
+              <li class="mr-3">
+                <a
+                  class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-2xl font-roboto"
+                  href="#bolsa-trabajo"
+                  >Bolsa de Trabajo</a
+                >
+              </li>
+              <li class="mr-3">
+                <a
+                  class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-2xl font-roboto"
+                  href="#contacto"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--Navbar end-->
+
+      <!--Video section-->
+      <section
+        class="background-video relative w-full h-screen min-w-12 overflow-hidden flex justify-center"
+      >
+        <video
+          class="absolute top-0 left-0 object-cover w-screen h-screen"
+          playsinline
+          autoplay
+          muted
+          loop
+        >
+          <source src="./media/header-vid.mp4" />
+        </video>
+        <div
+          class="relative w-3/4 text-white flex justify-center items-start flex-col min-h-full sm:text-left"
+        >
+          <h1 class="z-auto font-trispace text-7xl leading-none">
+            Discover our vision.
+          </h1>
+          <a
+            href=""
+            class="underline mb-0 flex font-roboto hover:text-secondary hover:text-underline pt-10 z-auto ml-3"
+            >Watch the video<img
+              class="ml-2"
+              src="https://icongr.am/feather/play-circle.svg?size=18&color=ffffff"
+          /></a>
+        </div>
+      </section>
+    </header>
+
     <div class="background-images absolute inset-0 overflow-hidden">
       <div class="cross absolute">
         <img src="img/background/XMLID 1.svg" />
