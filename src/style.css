@@ -19,7 +19,36 @@
 }
 
 .card {
-    @apply bg-white rounded shadow-md mx-auto mb-2 w-4/5;
+    @apply shadow px-10 py-6 rounded-xl bg-white m-2 mt-16;
+}
+
+.card-image {
+    @apply relative overflow-hidden rounded-xl h-64 mb-3 -mt-16;
+}
+
+.card-text {
+    @apply text-primary text-xl mb-1;
+}
+
+.card-participants li {
+    @apply inline-block -ml-5 w-10 h-10 rounded-full border-solid border-white border-2 overflow-hidden;
+}
+
+.card-participants div {
+    height: 2.5rem;
+    background-color: #4F4F4F;
+}
+
+.section {
+    @apply mt-20;
+}
+
+.section-title {
+    @apply text-3xl text-left font-trispace;
+}
+
+.section-title-bottom-line {
+    @apply secondary-gradient w-8 h-1 rounded-full mb-4;
 }
 
 .header,
@@ -33,4 +62,5 @@
 
 .background-images {
     z-index: -1;
+    margin-top: 100vh;
 }

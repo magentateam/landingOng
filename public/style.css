@@ -6,14 +6,6 @@
 
 @import "./background.css";
 
-/*Roboto*/
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
-
-/*Trispace*/
-
-@import url('https://fonts.googleapis.com/css2?family=Trispace:wght@500&display=swap');
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
@@ -10793,21 +10785,12 @@ video {
   font-family: Domine;
 }
 
-<<<<<<< HEAD
 .font-trispace{
   font-family: Trispace;
 }
 
 .font-roboto{
   font-family: Roboto;
-=======
-.font-linksNav{
-  font-family: Roboto, sans-serif;
-}
-
-.font-headerTitle{
-  font-family: Trispace, sans-serif;
->>>>>>> 7e31220... Header
 }
 
 .font-hairline{
@@ -22401,15 +22384,71 @@ video {
 }
 
 .card {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-radius: 0.75rem;
   --bg-opacity: 1;
   background-color: #fff;
   background-color: rgba(255, 255, 255, var(--bg-opacity));
-  border-radius: 0.25rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0.5rem;
-  width: 80%;
+  margin: 0.5rem;
+  margin-top: 4rem;
+}
+
+.card-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  height: 16rem;
+  margin-bottom: 0.75rem;
+  margin-top: -4rem;
+}
+
+.card-text {
+  --text-opacity: 1;
+  color: #9B51E0;
+  color: rgba(155, 81, 224, var(--text-opacity));
+  font-size: 1.25rem;
+  margin-bottom: 0.25rem;
+}
+
+.card-participants li {
+  display: inline-block;
+  margin-left: -1.25rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 9999px;
+  border-style: solid;
+  --border-opacity: 1;
+  border-color: #fff;
+  border-color: rgba(255, 255, 255, var(--border-opacity));
+  border-width: 2px;
+  overflow: hidden;
+}
+
+.card-participants div {
+  height: 2.5rem;
+  background-color: #4F4F4F;
+}
+
+.section {
+  margin-top: 5rem;
+}
+
+.section-title {
+  font-size: 1.875rem;
+  text-align: left;
+  font-family: Trispace;
+}
+
+.section-title-bottom-line {
+  background: linear-gradient(45deg, #FE7360 0%, #EB5757 100%);
+  width: 2rem;
+  height: 0.25rem;
+  border-radius: 9999px;
+  margin-bottom: 1rem;
 }
 
 .header,
@@ -22427,6 +22466,7 @@ video {
 
 .background-images {
   z-index: -1;
+  margin-top: 100vh;
 }
 
 @media (min-width: 640px){
@@ -32621,21 +32661,12 @@ video {
     font-family: Domine;
   }
 
-<<<<<<< HEAD
   .sm\:font-trispace{
     font-family: Trispace;
   }
 
   .sm\:font-roboto{
     font-family: Roboto;
-=======
-  .sm\:font-linksNav{
-    font-family: Roboto, sans-serif;
-  }
-
-  .sm\:font-headerTitle{
-    font-family: Trispace, sans-serif;
->>>>>>> 7e31220... Header
   }
 
   .sm\:font-hairline{
@@ -54347,21 +54378,12 @@ video {
     font-family: Domine;
   }
 
-<<<<<<< HEAD
   .md\:font-trispace{
     font-family: Trispace;
   }
 
   .md\:font-roboto{
     font-family: Roboto;
-=======
-  .md\:font-linksNav{
-    font-family: Roboto, sans-serif;
-  }
-
-  .md\:font-headerTitle{
-    font-family: Trispace, sans-serif;
->>>>>>> 7e31220... Header
   }
 
   .md\:font-hairline{
@@ -76073,21 +76095,12 @@ video {
     font-family: Domine;
   }
 
-<<<<<<< HEAD
   .lg\:font-trispace{
     font-family: Trispace;
   }
 
   .lg\:font-roboto{
     font-family: Roboto;
-=======
-  .lg\:font-linksNav{
-    font-family: Roboto, sans-serif;
-  }
-
-  .lg\:font-headerTitle{
-    font-family: Trispace, sans-serif;
->>>>>>> 7e31220... Header
   }
 
   .lg\:font-hairline{
@@ -97799,21 +97812,12 @@ video {
     font-family: Domine;
   }
 
-<<<<<<< HEAD
   .xl\:font-trispace{
     font-family: Trispace;
   }
 
   .xl\:font-roboto{
     font-family: Roboto;
-=======
-  .xl\:font-linksNav{
-    font-family: Roboto, sans-serif;
-  }
-
-  .xl\:font-headerTitle{
-    font-family: Trispace, sans-serif;
->>>>>>> 7e31220... Header
   }
 
   .xl\:font-hairline{

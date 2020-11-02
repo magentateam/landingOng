@@ -7,100 +7,111 @@
     <title>Magenta Team</title>
   </head>
   <body>
-<<<<<<< HEAD
-   
-    <div class="header">
-      <div class="logo"></div>
-      <div class="hamburguer"></div>
-    </div>
-    <div class="background-video">
-      <div>Discover our version</div>
-      <div>Watch the video</div>
-    </div>
-=======
     <header>
       <!--Navbar-->
-        <nav id="header" class="absolute flex items-center justify-between flex-wrap bg-primary fixed w-full z-10 ">
-          <div
-            class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0">
-            <div class="flex items-center">
-              <a
-                href="#">
-                <img
-                  src="./img/logo-white.svg"
-                  class="h-24 w-24 inline-block fill-current"
-                >
-              </a>
-            </div>
-  
-            <!--toggle menu-->
-            <div class="block lg:hidden pr-4">
-              <button
-                id="nav-toggle"
-                class="flex items-center px-3 py-2 border rounded text-white-500 border-white-600 hover:text-gray-800 hover:border-white-500 appearance-none focus:outline-none"
+      <nav
+        id="header"
+        class="absolute flex items-center justify-between flex-wrap bg-primary fixed w-full z-10"
+      >
+        <div
+          class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0"
+        >
+          <div class="flex items-center">
+            <a href="#">
+              <img
+                src="./img/logo-white.svg"
+                class="h-24 w-24 inline-block fill-current"
+              />
+            </a>
+          </div>
+
+          <!--toggle menu-->
+          <div class="block lg:hidden pr-4">
+            <button
+              id="nav-toggle"
+              class="flex items-center px-3 py-2 border rounded text-white-500 border-white-600 hover:text-gray-800 hover:border-white-500 appearance-none focus:outline-none"
+            >
+              <svg
+                class="fill-current h-3 w-3 white"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
               >
-                <svg
-                  class="fill-current h-3 w-3 white"
-                  viewBox="0 0 20 20"
-                  xmlns="http://www.w3.org/2000/svg"
+                <title>Menu</title>
+                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+              </svg>
+            </button>
+          </div>
+          <!--toggle menu end-->
+
+          <div
+            class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 text-black lg:p-0 z-20"
+            id="nav-content"
+          >
+            <ul class="list-reset lg:flex justify-end flex-1 items-center">
+              <li class="mr-3">
+                <a
+                  class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-2xl font-roboto"
+                  href="#cursos"
+                  >Cursos</a
                 >
-                  <title>Menu</title>
-                  <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
-                </svg>
-              </button>
-            </div>
-            <!--toggle menu end-->
-  
-            <div
-              class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 text-black  lg:p-0 z-20"
-              id="nav-content">
-              <ul class="list-reset lg:flex justify-end flex-1 items-center">
-                <li class="mr-3">
-                  <a
-                    class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-2xl font-linksNav"
-                    href="#cursos"
-                    >Cursos</a>
-                </li>
-                <li class="mr-3">
-                  <a
-                    class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-2xl font-linksNav"
-                    href="#eventos"
-                    >Eventos</a>
-                </li>
-                <li class="mr-3">
-                  <a
-                    class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-2xl font-linksNav"
-                    href="#bolsa-trabajo"
-                    >Bolsa de Trabajo</a>
-                </li>
-                <li class="mr-3">
-                  <a
-                    class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-2xl font-linksNav"
-                    href="#contacto"
-                    >Contacto</a>
-                </li>
-              </ul>
-            </div>
+              </li>
+              <li class="mr-3">
+                <a
+                  class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-2xl font-roboto"
+                  href="#eventos"
+                  >Eventos</a
+                >
+              </li>
+              <li class="mr-3">
+                <a
+                  class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-2xl font-roboto"
+                  href="#bolsa-trabajo"
+                  >Bolsa de Trabajo</a
+                >
+              </li>
+              <li class="mr-3">
+                <a
+                  class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-2xl font-roboto"
+                  href="#contacto"
+                  >Contacto</a
+                >
+              </li>
+            </ul>
           </div>
-          </nav>
-         <!--Navbar end-->
+        </div>
+      </nav>
+      <!--Navbar end-->
 
-         <!--Video section-->
-         <section class="background-video relative w-full h-screen min-w-12 overflow-hidden flex justify-center">
-          <video class="absolute top-0 left-0 object-cover w-screen h-screen" playsinline autoplay muted loop>
-            <source src="./media/header-vid.mp4"/>
-          </video>
-          <div class="relative w-3/4 text-white flex justify-center items-start flex-col min-h-full sm:text-left">
-            <h1 class="z-auto font-headerTitle text-7xl leading-none">Discover our vision.</h1>
-            <a href="" class="underline mb-0 flex font-linksNav hover:text-secondary hover:text-underline pt-10 z-auto ml-3">Watch the video<img class="ml-2" src="https://icongr.am/feather/play-circle.svg?size=18&color=ffffff"></a>
-          </div>
-        </section>
-
+      <!--Video section-->
+      <section
+        class="background-video relative w-full h-screen min-w-12 overflow-hidden flex justify-center"
+      >
+        <video
+          class="absolute top-0 left-0 object-cover w-screen h-screen"
+          playsinline
+          autoplay
+          muted
+          loop
+        >
+          <source src="./media/header-vid.mp4" />
+        </video>
+        <div
+          class="relative w-3/4 text-white flex justify-center items-start flex-col min-h-full sm:text-left"
+        >
+          <h1 class="z-auto font-trispace text-7xl leading-none">
+            Discover our vision.
+          </h1>
+          <a
+            href=""
+            class="underline mb-0 flex font-roboto hover:text-secondary hover:text-underline pt-10 z-auto ml-3"
+            >Watch the video<img
+              class="ml-2"
+              src="https://icongr.am/feather/play-circle.svg?size=18&color=ffffff"
+          /></a>
+        </div>
+      </section>
     </header>
 
-    
->>>>>>> 7e31220... Header
-    <div>Code in magenta</div>
     <div class="background-images absolute inset-0 overflow-hidden">
       <div class="cross absolute">
         <img src="img/background/XMLID 1.svg" />
@@ -112,7 +123,7 @@
       <div class="right-rectangle absolute">
         <img src="img/background/Rectangle 62.svg" />
       </div>
-      <div class="top-halfmoon  absolute">
+      <div class="top-halfmoon absolute">
         <img src="img/background/XMLID 1-3.svg" />
       </div>
       <div class="bottom-halfmoon absolute">
@@ -128,114 +139,246 @@
       <div class="grid absolute">
         <img src="img/background/XMLID 1-1.svg" />
       </div>
-    </div> 
+    </div>
     <div class="sections">
-      <div class="section">
-        <h1>About us</h1>
+      <div class="section mx-auto container">
+        <div class="w-1/2 border-box">
+          <div class="section-title">About us</div>
+          <hr class="section-title-bottom-line" />
+        </div>
         <div>lorem ipsum</div>
       </div>
 
-    <div class="section">
-      <div class="container mx-auto">
-          <h1 class="font-bold text-3xl font-domine">Courses</h1>
-          <hr class="secondary-gradient w-8 h-1 rounded-full mb-4">
-          <p class="font-semi-bold">We have a variety of courses you may be interested in. Check it out.</p>
-          <br>
+      <div class="section mx-auto container">
+        <div class="section-title">Upcoming Events</div>
+        <hr class="section-title-bottom-line" />
+        <p class="font-semi-bold">
+          We have a variety of courses you may be interested in. Check it out.
+        </p>
+        <br />
 
-          <div class="grid grid-cols-4">
-            <div class="shadow px-10 py-6 rounded-xl bg-white m-2 mt-16">
-              <div class="relative overflow-hidden rounded-xl h-64 mb-3 -mt-16">
-                <img class="absolute" src="img/full-stack.jpg" alt="Computer with hands programming">
-              </div>
-              <h2 class="text-primary text-xl mb-1">Full Stack Web Development</h2>
-              <p>Learn how to make great applications that can run on every device with a web explorer. You will learn from the basics and much more.</p>
+        <div class="grid grid-cols-4">
+          <div class="card">
+            <div class="card-image">
+              <img
+                class="absolute"
+                src="img/full-stack.jpg"
+                alt="Computer with hands programming"
+              />
             </div>
-  
-            <div class="shadow px-10 py-6 rounded-xl bg-white m-2 mt-16">
-              <div class="relative overflow-hidden rounded-xl h-64 mb-3 -mt-16 ">
-                <img class="absolute object-cover h-full" src="img/uxDesign.jpg" alt="Folder with UX designs">
-              </div>
-              <h2 class="text-primary text-xl mb-1">UX / UI Design</h2>
-              <p>In this course you will learn everything about designing great solutions for your customers. Research and find out what makes people love your app or site.</p>
-            </div>
-  
-            <div class="shadow px-10 py-6 rounded-xl bg-white m-2 mt-16">
-              <div class="relative overflow-hidden rounded-xl h-64 mb-3 -mt-16">
-                <img class="absolute object-cover h-full" src="img/digitalMarketing.jpg" alt="Computers with analytics">
-              </div>
-              <h2 class="text-primary text-xl mb-1">Digital Marketing</h2>
-              <p>Become an expert in ads. You will find the powerful tools of the internet to make your project discoverable on the web.</p>
-            </div>
-  
-            <div class="shadow px-10 py-6 rounded-xl bg-white m-2 mt-16">
-              <div class="relative overflow-hidden rounded-xl h-64 mb-3 -mt-16">
-                <img class="absolute object-cover h-full" src="img/techHunter.jpg" alt="Office meeting">
-              </div>
-              <h2 class="text-primary text-xl mb-1">Tech Hunter for Human Resources</h2>
-              <p>Learn how to hunt valuable people for your business. Discover how to make them work in your company.</p>
-            </div>
-
-            <div class="shadow px-10 py-6 rounded-xl bg-white m-2 mt-16">
-              <div class="relative overflow-hidden rounded-xl h-64 mb-3 -mt-16">
-                <img class="absolute object-cover h-full" src="img/dataScience.jpg" alt="Paper with graphs">
-              </div>
-              <h2 class="text-primary text-xl mb-1">Data Science</h2>
-              <p>Learn Big Data and how to make advantage of it with Python.</p>
-            </div>
-
+            <h2 class="card-title">Full Stack Web Development</h2>
+            <p>
+              Learn how to make great applications that can run on every device
+              with a web explorer. You will learn from the basics and much more...
+              <a class="card-learn-more">Learn more</a>
+              <hr class="my-2"/>
+              <ul class="card-participants ml-4">
+                <li><img src="img/person_0.jpg" /></li>
+                <li><img src="img/person_1.jpg" /></li>
+                <li><img src="img/person_2.jpg" /></li>
+                <li><img src="img/person_3.jpg" /></li>
+                <li><img src="img/person_4.jpg" /></li>
+                <li><div class="text-white p-1">
+                  +25
+                </div>
+                </li>
+            </p>
           </div>
+
+      </div>
+      <div class="section mx-auto container">
+        <div class="section-title">Courses</div>
+        <hr class="section-title-bottom-line" />
+        <p class="font-semi-bold">
+          We have a variety of courses you may be interested in. Check it out.
+        </p>
+        <br />
+
+        <div class="grid grid-cols-4">
+          <div class="card">
+            <div class="card-image">
+              <img
+                class="absolute"
+                src="img/full-stack.jpg"
+                alt="Computer with hands programming"
+              />
+            </div>
+            <h2 class="card-title">Full Stack Web Development</h2>
+            <p>
+              Learn how to make great applications that can run on every device
+              with a web explorer. You will learn from the basics and much more.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img
+                class="absolute object-cover h-full"
+                src="img/uxDesign.jpg"
+                alt="Folder with UX designs"
+              />
+            </div>
+            <h2 class="card-title">UX / UI Design</h2>
+            <p>
+              In this course you will learn everything about designing great
+              solutions for your customers. Research and find out what makes
+              people love your app or site.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img
+                class="absolute object-cover h-full"
+                src="img/digitalMarketing.jpg"
+                alt="Computers with analytics"
+              />
+            </div>
+            <h2 class="card-title">Digital Marketing</h2>
+            <p>
+              Become an expert in ads. You will find the powerful tools of the
+              internet to make your project discoverable on the web.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img
+                class="absolute object-cover h-full"
+                src="img/techHunter.jpg"
+                alt="Office meeting"
+              />
+            </div>
+            <h2 class="card-title">Tech Hunter for Human Resources</h2>
+            <p>
+              Learn how to hunt valuable people for your business. Discover how
+              to make them work in your company.
+            </p>
+          </div>
+
+          <div class="card">
+            <div class="card-image">
+              <img
+                class="absolute object-cover h-full"
+                src="img/dataScience.jpg"
+                alt="Paper with graphs"
+              />
+            </div>
+            <h2 class="card-title">Data Science</h2>
+            <p>Learn Big Data and how to make advantage of it with Python.</p>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img
+                class="absolute object-cover h-full"
+                src="img/dataScience.jpg"
+                alt="Paper with graphs"
+              />
+            </div>
+            <h2 class="card-title">Data Science</h2>
+            <p>Learn Big Data and how to make advantage of it with Python.</p>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img
+                class="absolute object-cover h-full"
+                src="img/dataScience.jpg"
+                alt="Paper with graphs"
+              />
+            </div>
+            <h2 class="card-title">Data Science</h2>
+            <p>Learn Big Data and how to make advantage of it with Python.</p>
+          </div>
+          <div class="card">
+            <div class="card-image">
+              <img
+                class="absolute object-cover h-full"
+                src="img/dataScience.jpg"
+                alt="Paper with graphs"
+              />
+            </div>
+            <h2 class="card-title">Data Science</h2>
+            <p>Learn Big Data and how to make advantage of it with Python.</p>
+          </div>
+        </div>
+
+        <div class="section container mx-auto">
+          <div class="w-1/2 border-box">
+            <div class="section-title">What they say</div>
+          </div>
+          <hr class="section-title-bottom-line" />
+          <p class="font-semi-bold">
+            These persons went through our organization and this is what they
+            think about us.
+          </p>
+
+          <div class="border-box py-20">
+            <div class="flex justify-around px-32">
+              <div class="shadow px-10 py-6 rounded-xl bg-white mx-3 w-1/3">
+                <div
+                  class="overflow-hidden rounded-full w-16 h-16 -mt-8 mx-auto shadow-lg"
+                >
+                  <img
+                    src="https://images.pexels.com/photos/2104185/pexels-photo-2104185.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="a girl"
+                  />
+                </div>
+                <div class="py-2">
+                  <h1 class="text-center font-domine text-primary text-sm pb-2">
+                    Nicole Westham
+                  </h1>
+                  <p class="text-center">
+                    Best instructors I've ever worked with! Their knowledge,
+                    professionalism and presentation skills are simply world
+                    class!
+                  </p>
+                </div>
+              </div>
+
+              <div class="shadow px-10 py-6 rounded-xl bg-white mx-3 w-1/3">
+                <div
+                  class="overflow-hidden rounded-full w-16 h-16 -mt-8 mx-auto shadow-lg"
+                >
+                  <img
+                    src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="a boy"
+                  />
+                </div>
+                <div class="py-2">
+                  <h1 class="text-center font-domine text-primary text-sm pb-2">
+                    Jonathan Green
+                  </h1>
+                  <p class="text-center">
+                    This is my third course - the quality of training I receive
+                    continues to be excellent.
+                  </p>
+                </div>
+              </div>
+
+              <div class="shadow px-10 py-6 rounded-xl bg-white mx-3 w-1/3">
+                <div
+                  class="overflow-hidden rounded-full w-16 h-16 -mt-8 mx-auto shadow-lg"
+                >
+                  <img
+                    src="https://images.pexels.com/photos/4445631/pexels-photo-4445631.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                    alt="a girl"
+                  />
+                </div>
+                <div class="py-2">
+                  <h1 class="text-center font-domine text-primary text-sm pb-2">
+                    Amy Thompson
+                  </h1>
+                  <p class="text-center">
+                    Methods are concise, thorough and they make the classes
+                    interesting.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-
-    <div class="section">
-      <div class="container mx-32">
-        <div class="w-1/2 border-box">
-          <div class="font-bold text-3xl text-left">
-            <h1 class="font-domine">What they say</h1>
-          </div>
-          <div>
-          </div>
-        </div>
-        <hr class="secondary-gradient w-8 h-1 rounded-full mb-4">
-        <p class="font-semi-bold">
-          These persons went through our organization and this is what they think about us.
-        </p>
-      </div>
-          
-      <div class="border-box bg-gray-200 py-20">
-        <div class="flex justify-around px-32">
-          <div class="shadow px-10 py-6 rounded-xl bg-white mx-3 w-1/3">
-            <div class="overflow-hidden rounded-full w-16 h-16 -mt-8 mx-auto shadow-lg">
-              <img src="https://images.pexels.com/photos/2104185/pexels-photo-2104185.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="a girl"/>
-            </div>
-            <div class="py-2">
-              <h1 class="text-center font-domine text-primary text-sm pb-2">Nicole Westham</h1>
-              <p class="text-center"> Best instructors I've ever worked with! Their knowledge, professionalism and presentation skills are simply world class!</p>
-            </div>
-          </div>
-          
-          <div class="shadow px-10 py-6 rounded-xl bg-white mx-3 w-1/3">
-            <div class="overflow-hidden rounded-full w-16 h-16 -mt-8 mx-auto shadow-lg">
-              <img src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="a boy" />
-            </div>
-            <div class="py-2">
-              <h1 class="text-center font-domine text-primary text-sm pb-2">Jonathan Green</h1>
-              <p class="text-center">This is my third course - the quality of training I receive continues to be excellent. </p>
-            </div>
-          </div>
-          
-          <div class="shadow px-10 py-6 rounded-xl bg-white mx-3 w-1/3">
-            <div class="overflow-hidden rounded-full w-16 h-16 -mt-8 mx-auto shadow-lg">
-              <img src="https://images.pexels.com/photos/4445631/pexels-photo-4445631.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="a girl"/>
-            </div>
-            <div class="py-2">
-              <h1 class="text-center font-domine text-primary text-sm pb-2">Amy Thompson</h1>
-              <p class="text-center"> Methods are concise, thorough and they make the classes interesting.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-
     <div class="footer border-box text-center w-full text-white">
       <div class="container mx-auto">
         <div class="w-1/2 border-box">
@@ -285,19 +428,13 @@
         </div>
       </div>
     </div>
-<<<<<<< HEAD
     <script>
-      document.getElementsByClassName('background-images')[0].style.height = document.body.clientHeight+ 'px';
-    </script>
-=======
-
-    <!--Script toggle menu-->
-    <script>
-      document.getElementById('nav-toggle').onclick = function(){
+      document.getElementsByClassName("background-images")[0].style.height =
+        document.body.clientHeight - window.innerHeight + "px";
+      // Script toggle menu
+      document.getElementById("nav-toggle").onclick = function () {
         document.getElementById("nav-content").classList.toggle("hidden");
-      }
+      };
     </script>
-
->>>>>>> 7e31220... Header
   </body>
 </html>
