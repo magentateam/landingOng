@@ -1,191 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-  <link rel="stylesheet" href="style.css" />
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Magenta Team</title>
-  </head>
-  <body>
-    <header>
-      <!--Navbar-->
-      <nav
-        id="header"
-        class="absolute flex items-center justify-between flex-wrap bg-primary fixed w-full z-10"
-      >
-        <div
-          class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0"
-        >
-          <div class="flex items-center">
-            <a href="#">
-              <img
-                src="./img/logo-white.svg"
-                class="h-24 w-24 inline-block fill-current"
-              />
-            </a>
-          </div>
+<link rel="stylesheet" href="style.css" />
 
-          <!--toggle menu-->
-          <div class="block lg:hidden pr-4">
-            <button
-              id="nav-toggle"
-              class="flex items-center px-3 py-2 border rounded text-white-500 border-white-600 hover:text-gray-800 hover:border-white-500 appearance-none focus:outline-none"
-            >
-              <svg
-                class="fill-current h-3 w-3 white"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <title>Menu</title>
-                <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Magenta Team</title>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <!--Navbar-->
+    <nav id="header" class="fixed bg-primary shadow-md  z-50 w-full px-5 flex justify-between items-center">
+      <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0">
+        <div class="flex items-center">
+          <a href="#">
+            <img src="./img/logo-white.svg" class="h-20 w-20 inline-block fill-current" />
+          </a>
+        </div>
+
+        <!--toggle menu-->
+        <div class="block lg:hidden pr-4">
+          <button id="nav-toggle"
+            class="flex items-center px-3 py-2 border rounded text-white-500 border-white-600 hover:text-gray-800 hover:border-white-500 appearance-none focus:outline-none">
+            <svg class="fill-current h-3 w-3 white" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <title>Menu</title>
+              <path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z" />
+            </svg>
+          </button>
+        </div>
+        <!--toggle menu end-->
+
+        <div
+          class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 text-black lg:p-0 z-20"
+          id="nav-content">
+          <ul class="list-reset lg:flex justify-end flex-1 items-center">
+            <li class="mr-3">
+              <a class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-xl font-roboto"
+                href="#courses">Courses</a>
+            </li>
+            <li class="mr-3">
+              <a class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-xl font-roboto"
+                href="#events">Events</a>
+            </li>
+            <li class="mr-3">
+              <a class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-xl font-roboto"
+                href="#jobBoard">Job Board</a>
+            </li>
+            <li class="mr-3">
+              <a class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-xl font-roboto"
+                href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!--Navbar end-->
+
+    <!--Video section-->
+    <section class="background-video relative w-full h-screen min-w-12 overflow-hidden flex justify-center">
+      <video class="absolute top-0 left-0 object-cover w-screen h-screen" playsinline autoplay muted loop>
+        <source src="./media/header-vid.mp4#t=,9,35" />
+      </video>
+      <div class="relative w-3/4 text-white flex justify-center items-start flex-col">
+        <h1 class="z-auto font-trispace text-7xl leading-none">
+          Discover our vision.
+        </h1>
+        <a href="#modal-open"
+          class="underline mb-0 flex font-roboto hover:text-primary hover:text-underline pt-10 z-auto ml-3 modal-open">Watch
+          the video<img class="ml-2" src="https://icongr.am/feather/play-circle.svg?size=18&color=ffffff" /></a>
+      </div>
+    </section>
+    <!--Modal-->
+    <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center transition duration-700 ease-in-out">
+      <div class="modal-overlay"></div>
+      <div class="modal-lg bg-white mx-auto rounded z-50 w-2/4 h-auto">
+        <div class="modal-close absolute top-0 right-0 cursor-pointer mt-4 mr-4 z-50">
+          <svg class="fill-current" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+            <path
+              d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
+            </path>
+          </svg>
+          <span class="text-sm">(Esc)</span>
+        </div>
+
+        <div class="modal-content py-4 px-6">
+          <div class="flex justify-end pb-3">
+            <div class="modal-close cursor-pointer z-50">
+              <svg class="fill-current text-black" xmlns="http://www.w3.org/2000/svg" width="18" height="18"
+                viewBox="0 0 18 18">
+                <path
+                  d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z">
+                </path>
               </svg>
-            </button>
+            </div>
           </div>
-          <!--toggle menu end-->
-
-          <div
-            class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 text-black lg:p-0 z-20"
-            id="nav-content"
-          >
-            <ul class="list-reset lg:flex justify-end flex-1 items-center">
-              <li class="mr-3">
-                <a
-                  class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-2xl font-roboto"
-                  href="#cursos"
-                  >Cursos</a
-                >
-              </li>
-              <li class="mr-3">
-                <a
-                  class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-2xl font-roboto"
-                  href="#eventos"
-                  >Eventos</a
-                >
-              </li>
-              <li class="mr-3">
-                <a
-                  class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-2xl font-roboto"
-                  href="#bolsa-trabajo"
-                  >Bolsa de Trabajo</a
-                >
-              </li>
-              <li class="mr-3">
-                <a
-                  class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-2xl font-roboto"
-                  href="#contacto"
-                  >Contacto</a
-                >
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-      <!--Navbar end-->
-
-      <!--Video section-->
-      <section
-        class="background-video relative w-full h-screen min-w-12 overflow-hidden flex justify-center"
-      >
-        <video
-          class="absolute top-0 left-0 object-cover w-screen h-screen"
-          playsinline
-          autoplay
-          muted
-          loop
-        >
-          <source src="./media/header-vid.mp4" />
-        </video>
-        <div
-          class="relative w-3/4 text-white flex justify-center items-start flex-col min-h-full sm:text-left"
-        >
-          <h1 class="z-auto font-trispace text-7xl leading-none">
-            Discover our vision.
-          </h1>
-          <a
-            href=""
-            class="underline mb-0 flex font-roboto hover:text-secondary hover:text-underline pt-10 z-auto ml-3"
-            >Watch the video<img
-              class="ml-2"
-              src="https://icongr.am/feather/play-circle.svg?size=18&color=ffffff"
-          /></a>
-        </div>
-      </section>
-    </header>
-
-    <div class="background-images absolute inset-0 overflow-hidden">
-      <div class="cross absolute">
-        <img src="img/background/XMLID 1.svg" />
-      </div>
-      <div class="left-rectangle absolute">
-        <img src="img/background/Rectangle 62-1.svg" />
-      </div>
-
-      <div class="right-rectangle absolute">
-        <img src="img/background/Rectangle 62.svg" />
-      </div>
-      <div class="top-halfmoon absolute">
-        <img src="img/background/XMLID 1-3.svg" />
-      </div>
-      <div class="bottom-halfmoon absolute">
-        <img src="img/background/XMLID 4.svg" />
-      </div>
-      <div class="left-waves absolute">
-        <img src="img/background/XMLID 2.svg" />
-      </div>
-      <div class="right-waves absolute">
-        <img src="img/background/XMLID 1-2.svg" />
-      </div>
-
-      <div class="grid absolute">
-        <img src="img/background/XMLID 1-1.svg" />
-      </div>
-    </div>
-    <div class="sections">
-      <div class="section mx-auto container">
-        <div class="w-1/2 border-box">
-          <div class="section-title">About us</div>
-          <hr class="section-title-bottom-line" />
+          <video class="modal-vid" controls>
+            <source src="./media/modal-vid.mp4">
+          </video>
         </div>
         <div>We are a World Wide corporation in which we <strong>teach </strong>,<strong> educate</strong> and <strong>inspire</strong> others to follow the path of <strong> Front-end development!</strong>
           People often ask  how to become a <strong>developer</strong>, what resources would we recommend, what is the correct order for learning these technologies. ¡Just go to the <strong>courses</strong> and you will be right there!
           Looking guidance?, Come find your <strong>mentor</strong> and learn with them!</div>
       </div>
+    </div>
+  </header>
 
-      <div class="section mx-auto container">
-        <div class="section-title">Upcoming Events</div>
+  <div class="background-images absolute inset-0 overflow-hidden">
+    <div class="cross absolute">
+      <img src="img/background/XMLID 1.svg" />
+    </div>
+    <div class="left-rectangle absolute">
+      <img src="img/background/Rectangle 62-1.svg" />
+    </div>
+
+    <div class="right-rectangle absolute">
+      <img src="img/background/Rectangle 62.svg" />
+    </div>
+    <div class="top-halfmoon absolute">
+      <img src="img/background/XMLID 1-3.svg" />
+    </div>
+    <div class="bottom-halfmoon absolute">
+      <img src="img/background/XMLID 4.svg" />
+    </div>
+    <div class="left-waves absolute">
+      <img src="img/background/XMLID 2.svg" />
+    </div>
+    <div class="right-waves absolute">
+      <img src="img/background/XMLID 1-2.svg" />
+    </div>
+
+    <div class="grid absolute">
+      <img src="img/background/XMLID 1-1.svg" />
+    </div>
+  </div>
+  <div class="sections">
+    <div class="section mx-auto container">
+      <div class="w-1/2 border-box">
+        <div class="section-title">About us</div>
         <hr class="section-title-bottom-line" />
-        <p class="font-semi-bold">
-          We have a variety of courses you may be interested in. Check it out.
-        </p>
-        <br />
+      </div>
+      <div>lorem ipsum</div>
+    </div>
 
-        <div class="grid grid-cols-4">
-          <div class="card">
-            <div class="card-image">
-              <img
-                class="absolute"
-                src="img/full-stack.jpg"
-                alt="Computer with hands programming"
-              />
-            </div>
-            <h2 class="card-title">Full Stack Web Development</h2>
-            <p>
-              Learn how to make great applications that can run on every device
-              with a web explorer. You will learn from the basics and much more...
-              <a class="card-learn-more">Learn more</a>
-              <hr class="my-2"/>
-              <ul class="card-participants ml-4">
-                <li><img src="img/person_0.jpg" /></li>
-                <li><img src="img/person_1.jpg" /></li>
-                <li><img src="img/person_2.jpg" /></li>
-                <li><img src="img/person_3.jpg" /></li>
-                <li><img src="img/person_4.jpg" /></li>
-                <li><div class="text-white p-1">
+    <div id="events" class="section mx-auto container">
+      <div class="section-title">Upcoming Events</div>
+      <hr class="section-title-bottom-line" />
+      <p class="font-semi-bold">
+        We have a variety of courses you may be interested in. Check it out.
+      </p>
+      <br />
+
+      <div class="grid grid-cols-4">
+        <div class="card">
+          <div class="card-image">
+            <img class="absolute" src="img/full-stack.jpg" alt="Computer with hands programming" />
+          </div>
+          <h2 class="card-title">Full Stack Web Development</h2>
+          <p>
+            Learn how to make great applications that can run on every device
+            with a web explorer. You will learn from the basics and much more...
+            <a class="card-learn-more">Learn more</a>
+            <hr class="my-2" />
+            <ul class="card-participants ml-4">
+              <li><img src="img/person_0.jpg" /></li>
+              <li><img src="img/person_1.jpg" /></li>
+              <li><img src="img/person_2.jpg" /></li>
+              <li><img src="img/person_3.jpg" /></li>
+              <li><img src="img/person_4.jpg" /></li>
+              <li>
+                <div class="text-white p-1">
                   +25
                 </div>
-                </li>
-            </p>
-          </div>
+              </li>
+          </p>
+        </div>
 
           <div class="card">
             <div class="card-image">
@@ -269,7 +263,7 @@
           </div>
 
       </div>
-      <div class="section mx-auto container">
+      <div id="courses" class="section mx-auto container">
         <div class="section-title">Courses</div>
         <hr class="section-title-bottom-line" />
         <p class="font-semi-bold">
@@ -280,11 +274,7 @@
         <div class="grid grid-cols-4">
           <div class="card">
             <div class="card-image">
-              <img
-                class="absolute"
-                src="img/full-stack.jpg"
-                alt="Computer with hands programming"
-              />
+              <img class="absolute" src="img/full-stack.jpg" alt="Computer with hands programming" />
             </div>
             <h2 class="card-title">Full Stack Web Development</h2>
             <p>
@@ -295,11 +285,7 @@
 
           <div class="card">
             <div class="card-image">
-              <img
-                class="absolute object-cover h-full"
-                src="img/uxDesign.jpg"
-                alt="Folder with UX designs"
-              />
+              <img class="absolute object-cover h-full" src="img/uxDesign.jpg" alt="Folder with UX designs" />
             </div>
             <h2 class="card-title">UX / UI Design</h2>
             <p>
@@ -311,11 +297,7 @@
 
           <div class="card">
             <div class="card-image">
-              <img
-                class="absolute object-cover h-full"
-                src="img/digitalMarketing.jpg"
-                alt="Computers with analytics"
-              />
+              <img class="absolute object-cover h-full" src="img/digitalMarketing.jpg" alt="Computers with analytics" />
             </div>
             <h2 class="card-title">Digital Marketing</h2>
             <p>
@@ -326,11 +308,7 @@
 
           <div class="card">
             <div class="card-image">
-              <img
-                class="absolute object-cover h-full"
-                src="img/techHunter.jpg"
-                alt="Office meeting"
-              />
+              <img class="absolute object-cover h-full" src="img/techHunter.jpg" alt="Office meeting" />
             </div>
             <h2 class="card-title">Tech Hunter for Human Resources</h2>
             <p>
@@ -341,44 +319,28 @@
 
           <div class="card">
             <div class="card-image">
-              <img
-                class="absolute object-cover h-full"
-                src="img/dataScience.jpg"
-                alt="Paper with graphs"
-              />
+              <img class="absolute object-cover h-full" src="img/dataScience.jpg" alt="Paper with graphs" />
             </div>
             <h2 class="card-title">Data Science</h2>
             <p>Learn Big Data and how to make advantage of it with Python.</p>
           </div>
           <div class="card">
             <div class="card-image">
-              <img
-                class="absolute object-cover h-full"
-                src="img/dataScience.jpg"
-                alt="Paper with graphs"
-              />
+              <img class="absolute object-cover h-full" src="img/dataScience.jpg" alt="Paper with graphs" />
             </div>
             <h2 class="card-title">Data Science</h2>
             <p>Learn Big Data and how to make advantage of it with Python.</p>
           </div>
           <div class="card">
             <div class="card-image">
-              <img
-                class="absolute object-cover h-full"
-                src="img/dataScience.jpg"
-                alt="Paper with graphs"
-              />
+              <img class="absolute object-cover h-full" src="img/dataScience.jpg" alt="Paper with graphs" />
             </div>
             <h2 class="card-title">Data Science</h2>
             <p>Learn Big Data and how to make advantage of it with Python.</p>
           </div>
           <div class="card">
             <div class="card-image">
-              <img
-                class="absolute object-cover h-full"
-                src="img/dataScience.jpg"
-                alt="Paper with graphs"
-              />
+              <img class="absolute object-cover h-full" src="img/dataScience.jpg" alt="Paper with graphs" />
             </div>
             <h2 class="card-title">Data Science</h2>
             <p>Learn Big Data and how to make advantage of it with Python.</p>
@@ -398,13 +360,10 @@
           <div class="border-box py-20">
             <div class="flex justify-around px-32">
               <div class="shadow px-10 py-6 rounded-xl bg-white mx-3 w-1/3">
-                <div
-                  class="overflow-hidden rounded-full w-16 h-16 -mt-8 mx-auto shadow-lg"
-                >
+                <div class="overflow-hidden rounded-full w-16 h-16 -mt-8 mx-auto shadow-lg">
                   <img
                     src="https://images.pexels.com/photos/2104185/pexels-photo-2104185.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                    alt="a girl"
-                  />
+                    alt="a girl" />
                 </div>
                 <div class="py-2">
                   <h1 class="text-center font-domine text-primary text-sm pb-2">
@@ -419,13 +378,10 @@
               </div>
 
               <div class="shadow px-10 py-6 rounded-xl bg-white mx-3 w-1/3">
-                <div
-                  class="overflow-hidden rounded-full w-16 h-16 -mt-8 mx-auto shadow-lg"
-                >
+                <div class="overflow-hidden rounded-full w-16 h-16 -mt-8 mx-auto shadow-lg">
                   <img
                     src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                    alt="a boy"
-                  />
+                    alt="a boy" />
                 </div>
                 <div class="py-2">
                   <h1 class="text-center font-domine text-primary text-sm pb-2">
@@ -439,13 +395,10 @@
               </div>
 
               <div class="shadow px-10 py-6 rounded-xl bg-white mx-3 w-1/3">
-                <div
-                  class="overflow-hidden rounded-full w-16 h-16 -mt-8 mx-auto shadow-lg"
-                >
+                <div class="overflow-hidden rounded-full w-16 h-16 -mt-8 mx-auto shadow-lg">
                   <img
                     src="https://images.pexels.com/photos/4445631/pexels-photo-4445631.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                    alt="a girl"
-                  />
+                    alt="a girl" />
                 </div>
                 <div class="py-2">
                   <h1 class="text-center font-domine text-primary text-sm pb-2">
@@ -462,7 +415,7 @@
         </div>
       </div>
     </div>
-    <div class="footer border-box text-center w-full text-white">
+    <div id="contact" class="footer border-box text-center w-full text-white">
       <div class="container mx-auto">
         <div class="w-1/2 border-box">
           <div class="font-bold text-3xl py-2 text-left">
@@ -475,9 +428,7 @@
             </button>
           </div>
         </div>
-        <div
-          class="text-center grid grid-cols-3 text-lg border-box w-full mt-6"
-        >
+        <div class="text-center grid grid-cols-3 text-lg border-box w-full mt-6">
           <div class="text-left">
             <div class="font-bold text-3xl">Courses</div>
             <div>Full Stack Web Development</div>
@@ -501,16 +452,13 @@
         </div>
         <hr class="my-4" />
         <div class="w-full text-center">
-          <img
-            src="img/logo.png"
-            class="ml-auto mr-auto w-1/12"
-            alt="Imagen de logo"
-            srcset=""
-          />
+          <img src="img/logo.png" class="ml-auto mr-auto w-1/12" alt="Imagen de logo" srcset="" />
           <div>2020 ©</div>
         </div>
       </div>
     </div>
+
+
     <script>
       document.getElementsByClassName("background-images")[0].style.height =
         document.body.clientHeight - window.innerHeight + "px";
@@ -518,6 +466,42 @@
       document.getElementById("nav-toggle").onclick = function () {
         document.getElementById("nav-content").classList.toggle("hidden");
       };
+
+
+      //Script modal
+      var openmodal = document.querySelectorAll('.modal-open')
+      for (var i = 0; i < openmodal.length; i++) {
+        openmodal[i].addEventListener('click', function (event) {
+          event.preventDefault()
+          toggleModal()
+        })
+      }
+
+      const overlay = document.querySelector('.modal-overlay')
+      overlay.addEventListener('click', toggleModal, stopVideo)
+
+      var closemodal = document.querySelectorAll('.modal-close')
+      for (var i = 0; i < closemodal.length; i++) {
+        closemodal[i].addEventListener('click', toggleModal)
+        closemodal[i].addEventListener('click', stopVideo);
+      }
+
+      var modalVid = document.querySelector('.modal-vid');
+
+      function stopVideo() {
+        modalVid.pause();
+        modalVid.currentTime = 0;
+      }
+
+
+      function toggleModal() {
+        const body = document.querySelector('body')
+        const modal = document.querySelector('.modal')
+        modal.classList.toggle('opacity-0')
+        modal.classList.toggle('pointer-events-none')
+        body.classList.toggle('modal-active')
+      }
     </script>
-  </body>
+</body>
+
 </html>

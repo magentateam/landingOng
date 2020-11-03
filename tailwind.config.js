@@ -27,7 +27,7 @@ module.exports = {
         roboto: ["Roboto"],
       },
       fontSize: {
-        "7xl": ["8rem", "responsive"],
+        "7xl": ["8rem"],
       },
     },
   },

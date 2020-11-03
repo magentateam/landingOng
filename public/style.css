@@ -11031,7 +11031,6 @@ video {
 
 .text-7xl{
   font-size: 8rem;
-  line-height: responsive;
 }
 
 .leading-3{
@@ -32907,7 +32906,6 @@ video {
 
   .sm\:text-7xl{
     font-size: 8rem;
-    line-height: responsive;
   }
 
   .sm\:leading-3{
@@ -54624,7 +54622,6 @@ video {
 
   .md\:text-7xl{
     font-size: 8rem;
-    line-height: responsive;
   }
 
   .md\:leading-3{
@@ -76341,7 +76338,6 @@ video {
 
   .lg\:text-7xl{
     font-size: 8rem;
-    line-height: responsive;
   }
 
   .lg\:leading-3{
@@ -98058,7 +98054,6 @@ video {
 
   .xl\:text-7xl{
     font-size: 8rem;
-    line-height: responsive;
   }
 
   .xl\:leading-3{
