@@ -84,21 +84,21 @@
 
       <!--Video section-->
       <section
-        class="background-video relative w-full h-screen min-w-12 overflow-hidden flex justify-center"
+        class="background-video w-full h-screen min-w-12 overflow-hidden flex justify-center"
       >
         <video
-          class="absolute top-0 left-0 object-cover w-screen h-screen"
+          class="absolute object-fill sm:object-fill md:object-cover lg:object-cover xl:object-cover w-screen h-screen"
           playsinline
           autoplay
           muted
           loop
         >
           <source src="./media/header-vid.mp4" />
-        </video>
+        </video>  
         <div
           class="relative w-3/4 text-white flex justify-center items-start flex-col min-h-full sm:text-left"
         >
-          <h1 class="z-auto font-trispace text-7xl leading-none">
+          <h1 class="z-auto font-trispace text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl leading-none">
             Discover our vision.
           </h1>
           <a
@@ -142,24 +142,24 @@
     </div>
     <div class="sections">
       <div class="section mx-auto container">
-        <div class="w-1/2 border-box">
+        <div class="w-1/2 border-box ml-6 sm:ml-6 md:ml-6 lg::ml-1 xl:ml-1">
           <div class="section-title">About us</div>
           <hr class="section-title-bottom-line" />
         </div>
-        <div>We are a World Wide corporation in which we <strong>teach </strong>,<strong> educate</strong> and <strong>inspire</strong> others to follow the path of <strong> Front-end development!</strong>
+        <div class="ml-6 sm:ml-6 md:ml-6 lg::ml-1 xl:ml-1">We are a World Wide corporation in which we <strong>teach </strong>,<strong> educate</strong> and <strong>inspire</strong> others to follow the path of <strong> Front-end development!</strong>
           People often ask  how to become a <strong>developer</strong>, what resources would we recommend, what is the correct order for learning these technologies. ¡Just go to the <strong>courses</strong> and you will be right there!
           Looking guidance?, Come find your <strong>mentor</strong> and learn with them!</div>
       </div>
 
       <div class="section mx-auto container">
-        <div class="section-title">Upcoming Events</div>
-        <hr class="section-title-bottom-line" />
-        <p class="font-semi-bold">
+        <div class="section-title ml-6 sm:ml-6 md:ml-6 lg::ml-1 xl:ml-1">Upcoming Events</div>
+        <hr class="section-title-bottom-line ml-6 sm:ml-6 md:ml-6 lg::ml-1 xl:ml-1" />
+        <p class="font-semi-bold ml-6 sm:ml-6 md:ml-6 lg::ml-1 xl:ml-1">
           We have a variety of courses you may be interested in. Check it out.
         </p>
         <br />
 
-        <div class="grid grid-cols-4">
+        <div class="grid grid-col sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4">
           <div class="card">
             <div class="card-image">
               <img
@@ -270,14 +270,14 @@
 
       </div>
       <div class="section mx-auto container">
-        <div class="section-title">Courses</div>
-        <hr class="section-title-bottom-line" />
-        <p class="font-semi-bold">
+        <div class="section-title ml-6 sm:ml-6 md:ml-6 lg:ml-1 xl:ml-6">Courses</div>
+        <hr class="section-title-bottom-line ml-6 sm:ml-6 md:ml-6 lg:ml-1 xl:ml-6" />
+        <p class="font-semi-bold ml-6 sm:ml-6 md:ml-6 lg:ml-1 xl:ml-6">
           We have a variety of courses you may be interested in. Check it out.
         </p>
         <br />
 
-        <div class="grid grid-cols-4">
+        <div class="grid grid-col sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           <div class="card">
             <div class="card-image">
               <img
@@ -386,18 +386,18 @@
         </div>
 
         <div class="section container mx-auto">
-          <div class="w-1/2 border-box">
+          <div class="border-box w-auto sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 ml-6 sm:ml-6 md:ml-6 lg:ml-1 xl:ml-1">
             <div class="section-title">What they say</div>
           </div>
-          <hr class="section-title-bottom-line" />
-          <p class="font-semi-bold">
+          <hr class="section-title-bottom-line ml-6" />
+          <p class="font-semi-bold ml-6 sm:ml-6 md:ml-6 lg::ml-1 xl:ml-1">
             These persons went through our organization and this is what they
             think about us.
           </p>
 
           <div class="border-box py-20">
-            <div class="flex justify-around px-32">
-              <div class="shadow px-10 py-6 rounded-xl bg-white mx-3 w-1/3">
+            <div class="flex-row lg:flex xl:flex justify-around px-12 sm:px-32 md:px-32 lg:px-32 xl:px-32">
+              <div class="shadow px-10 py-12 lg:py-6 xl:py-6 rounded-xl bg-white w:auto lg:w-1/3 xl:w-1/3 my-6 lg:my-1 xl:my-1 mx-3">
                 <div
                   class="overflow-hidden rounded-full w-16 h-16 -mt-8 mx-auto shadow-lg"
                 >
@@ -418,7 +418,7 @@
                 </div>
               </div>
 
-              <div class="shadow px-10 py-6 rounded-xl bg-white mx-3 w-1/3">
+              <div class="shadow px-10 py-12 lg:py-6 xl:py-6 rounded-xl bg-white w:auto lg:w-1/3 xl:w-1/3 my-6 lg:my-1 xl:my-1 mx-3">
                 <div
                   class="overflow-hidden rounded-full w-16 h-16 -mt-8 mx-auto shadow-lg"
                 >
@@ -438,7 +438,7 @@
                 </div>
               </div>
 
-              <div class="shadow px-10 py-6 rounded-xl bg-white mx-3 w-1/3">
+              <div class="shadow px-10 py-12 lg:py-6 xl:py-6 rounded-xl bg-white w:auto lg:w-1/3 xl:w-1/3 my-6 lg:my-1 xl:my-1 mx-3">
                 <div
                   class="overflow-hidden rounded-full w-16 h-16 -mt-8 mx-auto shadow-lg"
                 >
@@ -462,21 +462,21 @@
         </div>
       </div>
     </div>
-    <div class="footer border-box text-center w-full text-white">
-      <div class="container mx-auto">
-        <div class="w-1/2 border-box">
-          <div class="font-bold text-3xl py-2 text-left">
+    <div class="footer border-box text-center w-full text-white px-6">
+      <div class="container mx-0 sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto px-2">
+        <div class="w-auto">
+          <div class="font-bold text-2xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-3xl py-2 text-left">
             Don't miss anything
           </div>
           <div class="flex">
-            <input type="text" class="rounded h-10 w-9/12" />
-            <button class="subscribe-button font-bold text-base py-1 px-10">
+            <input type="text" class="rounded h-10 w-9/12 sm:w-5/12 md:w-5/12 lg:w-5/12 xl:w-5/12" />
+            <button class="subscribe-button font-bold text-base py-1 px-4 sm:px-10 md:px-10 lg:px-10 xl:px-10">
               Subscribe
             </button>
           </div>
         </div>
         <div
-          class="text-center grid grid-cols-3 text-lg border-box w-full mt-6"
+          class="text-center grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 text-lg border-box w-full mt-6"
         >
           <div class="text-left">
             <div class="font-bold text-3xl">Courses</div>
