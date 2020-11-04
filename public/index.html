@@ -5,6 +5,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Magenta Team</title>
+    <style>
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
   </head>
   <body>
     <header>
@@ -51,29 +56,29 @@
               <li class="mr-3">
                 <a
                   class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-2xl font-roboto"
-                  href="#cursos"
-                  >Cursos</a
+                  href="#courses"
+                  >Courses</a
                 >
               </li>
               <li class="mr-3">
                 <a
                   class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-2xl font-roboto"
-                  href="#eventos"
-                  >Eventos</a
+                  href="#events"
+                  >Events</a
                 >
               </li>
               <li class="mr-3">
                 <a
                   class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-2xl font-roboto"
-                  href="#bolsa-trabajo"
-                  >Bolsa de Trabajo</a
+                  href="#job-board"
+                  >Job Board</a
                 >
               </li>
               <li class="mr-3">
                 <a
                   class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-2xl font-roboto"
-                  href="#contacto"
-                  >Contacto</a
+                  href="#contact"
+                  >Contact</a
                 >
               </li>
             </ul>
@@ -93,23 +98,69 @@
           muted
           loop
         >
-          <source src="./media/header-vid.mp4" />
-        </video>  
+          <source src="./media/header-vid.mp4#t=,9,35" />
+        </video>
         <div
           class="relative w-3/4 text-white flex justify-center items-start flex-col min-h-full sm:text-left"
         >
-          <h1 class="z-auto font-trispace text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl leading-none">
+          <h1
+            class="z-auto font-trispace text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl leading-none"
+          >
             Discover our vision.
           </h1>
           <a
-            href=""
-            class="underline mb-0 flex font-roboto hover:text-secondary hover:text-underline pt-10 z-auto ml-3"
+            href="#modal-open"
+            class="underline mb-0 flex font-roboto hover:text-primary hover:text-underline pt-10 z-auto ml-3 modal-open"
             >Watch the video<img
               class="ml-2"
               src="https://icongr.am/feather/play-circle.svg?size=18&color=ffffff"
           /></a>
         </div>
       </section>
+      <div
+        class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center transition duration-700 ease-in-out"
+      >
+        <div class="modal-overlay"></div>
+        <div class="modal-lg bg-white mx-auto rounded z-50 w-2/4 h-auto">
+          <div
+            class="modal-close absolute top-0 right-0 cursor-pointer mt-4 mr-4 z-50"
+          >
+            <svg
+              class="fill-current"
+              xmlns="http://www.w3.org/2000/svg"
+              width="18"
+              height="18"
+              viewBox="0 0 18 18"
+            >
+              <path
+                d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"
+              ></path>
+            </svg>
+            <span class="text-sm">(Esc)</span>
+          </div>
+
+          <div class="modal-content py-4 px-6">
+            <div class="flex justify-end pb-3">
+              <div class="modal-close cursor-pointer z-50">
+                <svg
+                  class="fill-current text-black"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 18 18"
+                >
+                  <path
+                    d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <video class="modal-vid" controls>
+              <source src="./media/modal-vid.mp4" />
+            </video>
+          </div>
+        </div>
+      </div>
     </header>
 
     <div class="background-images absolute inset-0 overflow-hidden">
@@ -146,20 +197,34 @@
           <div class="section-title">About us</div>
           <hr class="section-title-bottom-line" />
         </div>
-        <div class="ml-6 sm:ml-6 md:ml-6 lg:ml-1 xl:ml-1">We are a World Wide corporation in which we <strong>teach </strong>,<strong> educate</strong> and <strong>inspire</strong> others to follow the path of <strong> Front-end development!</strong>
-          People often ask  how to become a <strong>developer</strong>, what resources would we recommend, what is the correct order for learning these technologies. ¡Just go to the <strong>courses</strong> and you will be right there!
-          Looking guidance?, Come find your <strong>mentor</strong> and learn with them!</div>
+        <div class="ml-6 sm:ml-6 md:ml-6 lg:ml-1 xl:ml-1">
+          We are a World Wide corporation in which we
+          <strong>teach </strong>,<strong> educate</strong> and
+          <strong>inspire</strong> others to follow the path of
+          <strong> Front-end development!</strong> People often ask how to
+          become a <strong>developer</strong>, what resources would we
+          recommend, what is the correct order for learning these technologies.
+          ¡Just go to the <strong>courses</strong> and you will be right there!
+          Looking guidance?, Come find your <strong>mentor</strong> and learn
+          with them!
+        </div>
       </div>
 
       <div class="section mx-auto container">
-        <div class="section-title ml-6 sm:ml-6 md:ml-6 lg:ml-1 xl:ml-1">Upcoming Events</div>
-        <hr class="section-title-bottom-line ml-6 sm:ml-6 md:ml-6 lg:ml-1 xl:ml-1" />
+        <div class="section-title ml-6 sm:ml-6 md:ml-6 lg:ml-1 xl:ml-1">
+          Upcoming Events
+        </div>
+        <hr
+          class="section-title-bottom-line ml-6 sm:ml-6 md:ml-6 lg:ml-1 xl:ml-1"
+        />
         <p class="font-semi-bold ml-6 sm:ml-6 md:ml-6 lg:ml-1 xl:ml-1">
           We have a variety of courses you may be interested in. Check it out.
         </p>
         <br />
 
-        <div class="grid grid-col sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 mx-4">
+        <div
+          class="grid grid-col sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-4 mx-4"
+        >
           <div class="card">
             <div class="card-image">
               <img
@@ -169,49 +234,18 @@
               />
             </div>
             <h2 class="card-title">Full Stack Web Development</h2>
-            <p>
-              Learn how to make great applications that can run on every device
-              with a web explorer. You will learn from the basics and much more...
-              <a class="card-learn-more">Learn more</a>
-              <hr class="my-2"/>
-              <ul class="card-participants ml-4">
-                <li><img src="img/person_0.jpg" /></li>
-                <li><img src="img/person_1.jpg" /></li>
-                <li><img src="img/person_2.jpg" /></li>
-                <li><img src="img/person_3.jpg" /></li>
-                <li><img src="img/person_4.jpg" /></li>
-                <li><div class="text-white p-1">
-                  +25
-                </div>
-                </li>
-            </p>
-          </div>
-
-          <div class="card">
-            <div class="card-image">
-              <img
-                class="absolute"
-                src="img/full-stack.jpg"
-                alt="Computer with hands programming"
-              />
-            </div>
-            <h2 class="card-title">Full Stack Web Development</h2>
-            <p>
-              Learn how to make great applications that can run on every device
-              with a web explorer. You will learn from the basics and much more...
-              <a class="card-learn-more">Learn more</a>
-              <hr class="my-2"/>
-              <ul class="card-participants ml-4">
-                <li><img src="img/person_0.jpg" /></li>
-                <li><img src="img/person_1.jpg" /></li>
-                <li><img src="img/person_2.jpg" /></li>
-                <li><img src="img/person_3.jpg" /></li>
-                <li><img src="img/person_4.jpg" /></li>
-                <li><div class="text-white p-1">
-                  +25
-                </div>
-                </li>
-            </p>
+            Learn how to make great applications that can run on every device
+            with a web explorer. You will learn from the basics and much more...
+            <a class="card-learn-more">Learn more</a>
+            <hr class="my-2" />
+            <ul class="card-participants ml-4">
+              <li><img src="img/person_0.jpg" /></li>
+              <li><img src="img/person_1.jpg" /></li>
+              <li><img src="img/person_2.jpg" /></li>
+              <li><img src="img/person_3.jpg" /></li>
+              <li><img src="img/person_4.jpg" /></li>
+              <li><div class="text-white p-1">+25</div></li>
+            </ul>
           </div>
 
           <div class="card">
@@ -223,61 +257,20 @@
               />
             </div>
             <h2 class="card-title">Full Stack Web Development</h2>
-            <p>
-              Learn how to make great applications that can run on every device
-              with a web explorer. You will learn from the basics and much more...
-              <a class="card-learn-more">Learn more</a>
-              <hr class="my-2"/>
-              <ul class="card-participants ml-4">
-                <li><img src="img/person_0.jpg" /></li>
-                <li><img src="img/person_1.jpg" /></li>
-                <li><img src="img/person_2.jpg" /></li>
-                <li><img src="img/person_3.jpg" /></li>
-                <li><img src="img/person_4.jpg" /></li>
-                <li><div class="text-white p-1">
-                  +25
-                </div>
-                </li>
-            </p>
+            Learn how to make great applications that can run on every device
+            with a web explorer. You will learn from the basics and much more...
+            <a class="card-learn-more">Learn more</a>
+            <hr class="my-2" />
+            <ul class="card-participants ml-4">
+              <li><img src="img/person_0.jpg" /></li>
+              <li><img src="img/person_1.jpg" /></li>
+              <li><img src="img/person_2.jpg" /></li>
+              <li><img src="img/person_3.jpg" /></li>
+              <li><img src="img/person_4.jpg" /></li>
+              <li><div class="text-white p-1">+25</div></li>
+            </ul>
           </div>
 
-            <div class="card">
-            <div class="card-image">
-              <img
-                class="absolute"
-                src="img/full-stack.jpg"
-                alt="Computer with hands programming"
-              />
-            </div>
-            <h2 class="card-title">Full Stack Web Development</h2>
-            <p>
-              Learn how to make great applications that can run on every device
-              with a web explorer. You will learn from the basics and much more...
-              <a class="card-learn-more">Learn more</a>
-              <hr class="my-2"/>
-              <ul class="card-participants ml-4">
-                <li><img src="img/person_0.jpg" /></li>
-                <li><img src="img/person_1.jpg" /></li>
-                <li><img src="img/person_2.jpg" /></li>
-                <li><img src="img/person_3.jpg" /></li>
-                <li><img src="img/person_4.jpg" /></li>
-                <li><div class="text-white p-1">
-                  +25
-                </div>
-                </li>
-            </p>
-          </div>
-
-      </div>
-      <div class="section mx-auto container">
-        <div class="section-title ml-6 sm:ml-6 md:ml-6 lg:ml-1 xl:ml-6">Courses</div>
-        <hr class="section-title-bottom-line ml-6 sm:ml-6 md:ml-6 lg:ml-1 xl:ml-6" />
-        <p class="font-semi-bold ml-6 sm:ml-6 md:ml-6 lg:ml-1 xl:ml-6">
-          We have a variety of courses you may be interested in. Check it out.
-        </p>
-        <br />
-
-        <div class="grid grid-col sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mx-4">
           <div class="card">
             <div class="card-image">
               <img
@@ -287,174 +280,253 @@
               />
             </div>
             <h2 class="card-title">Full Stack Web Development</h2>
-            <p>
-              Learn how to make great applications that can run on every device
-              with a web explorer. You will learn from the basics and much more.
-            </p>
+            Learn how to make great applications that can run on every device
+            with a web explorer. You will learn from the basics and much more...
+            <a class="card-learn-more">Learn more</a>
+            <hr class="my-2" />
+            <ul class="card-participants ml-4">
+              <li><img src="img/person_0.jpg" /></li>
+              <li><img src="img/person_1.jpg" /></li>
+              <li><img src="img/person_2.jpg" /></li>
+              <li><img src="img/person_3.jpg" /></li>
+              <li><img src="img/person_4.jpg" /></li>
+              <li><div class="text-white p-1">+25</div></li>
+            </ul>
           </div>
 
           <div class="card">
             <div class="card-image">
               <img
-                class="absolute object-cover h-full"
-                src="img/uxDesign.jpg"
-                alt="Folder with UX designs"
+                class="absolute"
+                src="img/full-stack.jpg"
+                alt="Computer with hands programming"
               />
             </div>
-            <h2 class="card-title">UX / UI Design</h2>
-            <p>
-              In this course you will learn everything about designing great
-              solutions for your customers. Research and find out what makes
-              people love your app or site.
-            </p>
-          </div>
-
-          <div class="card">
-            <div class="card-image">
-              <img
-                class="absolute object-cover h-full"
-                src="img/digitalMarketing.jpg"
-                alt="Computers with analytics"
-              />
-            </div>
-            <h2 class="card-title">Digital Marketing</h2>
-            <p>
-              Become an expert in ads. You will find the powerful tools of the
-              internet to make your project discoverable on the web.
-            </p>
-          </div>
-
-          <div class="card">
-            <div class="card-image">
-              <img
-                class="absolute object-cover h-full"
-                src="img/techHunter.jpg"
-                alt="Office meeting"
-              />
-            </div>
-            <h2 class="card-title">Tech Hunter for Human Resources</h2>
-            <p>
-              Learn how to hunt valuable people for your business. Discover how
-              to make them work in your company.
-            </p>
-          </div>
-
-          <div class="card">
-            <div class="card-image">
-              <img
-                class="absolute object-cover h-full"
-                src="img/dataScience.jpg"
-                alt="Paper with graphs"
-              />
-            </div>
-            <h2 class="card-title">Data Science</h2>
-            <p>Learn Big Data and how to make advantage of it with Python.</p>
-          </div>
-          <div class="card">
-            <div class="card-image">
-              <img
-                class="absolute object-cover h-full"
-                src="img/dataScience.jpg"
-                alt="Paper with graphs"
-              />
-            </div>
-            <h2 class="card-title">Data Science</h2>
-            <p>Learn Big Data and how to make advantage of it with Python.</p>
-          </div>
-          <div class="card">
-            <div class="card-image">
-              <img
-                class="absolute object-cover h-full"
-                src="img/dataScience.jpg"
-                alt="Paper with graphs"
-              />
-            </div>
-            <h2 class="card-title">Data Science</h2>
-            <p>Learn Big Data and how to make advantage of it with Python.</p>
-          </div>
-          <div class="card">
-            <div class="card-image">
-              <img
-                class="absolute object-cover h-full"
-                src="img/dataScience.jpg"
-                alt="Paper with graphs"
-              />
-            </div>
-            <h2 class="card-title">Data Science</h2>
-            <p>Learn Big Data and how to make advantage of it with Python.</p>
+            <h2 class="card-title">Full Stack Web Development</h2>
+            Learn how to make great applications that can run on every device
+            with a web explorer. You will learn from the basics and much more...
+            <a class="card-learn-more">Learn more</a>
+            <hr class="my-2" />
+            <ul class="card-participants ml-4">
+              <li><img src="img/person_0.jpg" /></li>
+              <li><img src="img/person_1.jpg" /></li>
+              <li><img src="img/person_2.jpg" /></li>
+              <li><img src="img/person_3.jpg" /></li>
+              <li><img src="img/person_4.jpg" /></li>
+              <li><div class="text-white p-1">+25</div></li>
+            </ul>
           </div>
         </div>
-
-        <div class="section container mx-auto">
-          <div class="border-box w-auto sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 ml-6 sm:ml-6 md:ml-6 lg:ml-1 xl:ml-1">
-            <div class="section-title">What they say</div>
+        <div class="section mx-auto container">
+          <div class="section-title ml-6 sm:ml-6 md:ml-6 lg:ml-1 xl:ml-6">
+            Courses
           </div>
-          <hr class="section-title-bottom-line ml-6" />
-          <p class="font-semi-bold ml-6 sm:ml-6 md:ml-6 lg:ml-1 xl:ml-1">
-            These persons went through our organization and this is what they
-            think about us.
+          <hr
+            class="section-title-bottom-line ml-6 sm:ml-6 md:ml-6 lg:ml-1 xl:ml-6"
+          />
+          <p class="font-semi-bold ml-6 sm:ml-6 md:ml-6 lg:ml-1 xl:ml-6">
+            We have a variety of courses you may be interested in. Check it out.
           </p>
+          <br />
 
-          <div class="border-box py-20">
-            <div class="flex-row lg:flex xl:flex justify-around px-12 sm:px-32 md:px-32 lg:px-32 xl:px-32">
-              <div class="shadow px-10 py-12 lg:py-6 xl:py-6 rounded-xl bg-gray-100 xl:bg-white w:auto lg:w-1/3 xl:w-1/3 my-6 lg:my-1 xl:my-1 mx-3">
-                <div
-                  class="overflow-hidden rounded-full w-16 h-16 -mt-8 mx-auto shadow-lg"
-                >
-                  <img
-                    src="https://images.pexels.com/photos/2104185/pexels-photo-2104185.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                    alt="a girl"
-                  />
-                </div>
-                <div class="py-2">
-                  <h1 class="text-center font-domine text-primary text-sm pb-2">
-                    Nicole Westham
-                  </h1>
-                  <p class="text-center">
-                    Best instructors I've ever worked with! Their knowledge,
-                    professionalism and presentation skills are simply world
-                    class!
-                  </p>
-                </div>
+          <div
+            class="grid grid-col sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mx-4"
+          >
+            <div class="card">
+              <div class="card-image">
+                <img
+                  class="absolute"
+                  src="img/full-stack.jpg"
+                  alt="Computer with hands programming"
+                />
               </div>
+              <h2 class="card-title">Full Stack Web Development</h2>
+              <p>
+                Learn how to make great applications that can run on every
+                device with a web explorer. You will learn from the basics and
+                much more.
+              </p>
+            </div>
 
-              <div class="shadow px-10 py-12 lg:py-6 xl:py-6 rounded-xl bg-gray-100 xl:bg-white w:auto lg:w-1/3 xl:w-1/3 my-6 lg:my-1 xl:my-1 mx-3">
-                <div
-                  class="overflow-hidden rounded-full w-16 h-16 -mt-8 mx-auto shadow-lg"
-                >
-                  <img
-                    src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                    alt="a boy"
-                  />
-                </div>
-                <div class="py-2">
-                  <h1 class="text-center font-domine text-primary text-sm pb-2">
-                    Jonathan Green
-                  </h1>
-                  <p class="text-center">
-                    This is my third course - the quality of training I receive
-                    continues to be excellent.
-                  </p>
-                </div>
+            <div class="card">
+              <div class="card-image">
+                <img
+                  class="absolute object-cover h-full"
+                  src="img/uxDesign.jpg"
+                  alt="Folder with UX designs"
+                />
               </div>
+              <h2 class="card-title">UX / UI Design</h2>
+              <p>
+                In this course you will learn everything about designing great
+                solutions for your customers. Research and find out what makes
+                people love your app or site.
+              </p>
+            </div>
 
-              <div class="shadow px-10 py-12 lg:py-6 xl:py-6 rounded-xl bg-gray-100 xl:bg-white w:auto lg:w-1/3 xl:w-1/3 my-6 lg:my-1 xl:my-1 mx-3">
+            <div class="card">
+              <div class="card-image">
+                <img
+                  class="absolute object-cover h-full"
+                  src="img/digitalMarketing.jpg"
+                  alt="Computers with analytics"
+                />
+              </div>
+              <h2 class="card-title">Digital Marketing</h2>
+              <p>
+                Become an expert in ads. You will find the powerful tools of the
+                internet to make your project discoverable on the web.
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="card-image">
+                <img
+                  class="absolute object-cover h-full"
+                  src="img/techHunter.jpg"
+                  alt="Office meeting"
+                />
+              </div>
+              <h2 class="card-title">Tech Hunter for Human Resources</h2>
+              <p>
+                Learn how to hunt valuable people for your business. Discover
+                how to make them work in your company.
+              </p>
+            </div>
+
+            <div class="card">
+              <div class="card-image">
+                <img
+                  class="absolute object-cover h-full"
+                  src="img/dataScience.jpg"
+                  alt="Paper with graphs"
+                />
+              </div>
+              <h2 class="card-title">Data Science</h2>
+              <p>Learn Big Data and how to make advantage of it with Python.</p>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img
+                  class="absolute object-cover h-full"
+                  src="img/dataScience.jpg"
+                  alt="Paper with graphs"
+                />
+              </div>
+              <h2 class="card-title">Data Science</h2>
+              <p>Learn Big Data and how to make advantage of it with Python.</p>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img
+                  class="absolute object-cover h-full"
+                  src="img/dataScience.jpg"
+                  alt="Paper with graphs"
+                />
+              </div>
+              <h2 class="card-title">Data Science</h2>
+              <p>Learn Big Data and how to make advantage of it with Python.</p>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img
+                  class="absolute object-cover h-full"
+                  src="img/dataScience.jpg"
+                  alt="Paper with graphs"
+                />
+              </div>
+              <h2 class="card-title">Data Science</h2>
+              <p>Learn Big Data and how to make advantage of it with Python.</p>
+            </div>
+          </div>
+
+          <div class="section container mx-auto">
+            <div
+              class="border-box w-auto sm:w-1/2 md:w-1/2 lg:w-1/2 xl:w-1/2 ml-6 sm:ml-6 md:ml-6 lg:ml-1 xl:ml-1"
+            >
+              <div class="section-title">What they say</div>
+            </div>
+            <hr class="section-title-bottom-line ml-6" />
+            <p class="font-semi-bold ml-6 sm:ml-6 md:ml-6 lg:ml-1 xl:ml-1">
+              These persons went through our organization and this is what they
+              think about us.
+            </p>
+
+            <div class="border-box py-20">
+              <div
+                class="flex-row lg:flex xl:flex justify-around px-12 sm:px-32 md:px-32 lg:px-32 xl:px-32"
+              >
                 <div
-                  class="overflow-hidden rounded-full w-16 h-16 -mt-8 mx-auto shadow-lg"
+                  class="shadow px-10 py-12 lg:py-6 xl:py-6 rounded-xl bg-gray-100 xl:bg-white w:auto lg:w-1/3 xl:w-1/3 my-6 lg:my-1 xl:my-1 mx-3"
                 >
-                  <img
-                    src="https://images.pexels.com/photos/4445631/pexels-photo-4445631.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-                    alt="a girl"
-                  />
+                  <div
+                    class="overflow-hidden rounded-full w-16 h-16 -mt-8 mx-auto shadow-lg"
+                  >
+                    <img
+                      src="https://images.pexels.com/photos/2104185/pexels-photo-2104185.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                      alt="a girl"
+                    />
+                  </div>
+                  <div class="py-2">
+                    <h1
+                      class="text-center font-domine text-primary text-sm pb-2"
+                    >
+                      Nicole Westham
+                    </h1>
+                    <p class="text-center">
+                      Best instructors I've ever worked with! Their knowledge,
+                      professionalism and presentation skills are simply world
+                      class!
+                    </p>
+                  </div>
                 </div>
-                <div class="py-2">
-                  <h1 class="text-center font-domine text-primary text-sm pb-2">
-                    Amy Thompson
-                  </h1>
-                  <p class="text-center">
-                    Methods are concise, thorough and they make the classes
-                    interesting.
-                  </p>
+
+                <div
+                  class="shadow px-10 py-12 lg:py-6 xl:py-6 rounded-xl bg-gray-100 xl:bg-white w:auto lg:w-1/3 xl:w-1/3 my-6 lg:my-1 xl:my-1 mx-3"
+                >
+                  <div
+                    class="overflow-hidden rounded-full w-16 h-16 -mt-8 mx-auto shadow-lg"
+                  >
+                    <img
+                      src="https://images.pexels.com/photos/2379005/pexels-photo-2379005.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                      alt="a boy"
+                    />
+                  </div>
+                  <div class="py-2">
+                    <h1
+                      class="text-center font-domine text-primary text-sm pb-2"
+                    >
+                      Jonathan Green
+                    </h1>
+                    <p class="text-center">
+                      This is my third course - the quality of training I
+                      receive continues to be excellent.
+                    </p>
+                  </div>
+                </div>
+
+                <div
+                  class="shadow px-10 py-12 lg:py-6 xl:py-6 rounded-xl bg-gray-100 xl:bg-white w:auto lg:w-1/3 xl:w-1/3 my-6 lg:my-1 xl:my-1 mx-3"
+                >
+                  <div
+                    class="overflow-hidden rounded-full w-16 h-16 -mt-8 mx-auto shadow-lg"
+                  >
+                    <img
+                      src="https://images.pexels.com/photos/4445631/pexels-photo-4445631.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                      alt="a girl"
+                    />
+                  </div>
+                  <div class="py-2">
+                    <h1
+                      class="text-center font-domine text-primary text-sm pb-2"
+                    >
+                      Amy Thompson
+                    </h1>
+                    <p class="text-center">
+                      Methods are concise, thorough and they make the classes
+                      interesting.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -463,14 +535,23 @@
       </div>
     </div>
     <div class="footer border-box text-center w-full text-white px-6">
-      <div class="container mx-0 sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto px-2">
+      <div
+        class="container mx-0 sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto px-2"
+      >
         <div class="w-auto">
-          <div class="font-bold text-2xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-3xl py-2 text-left">
+          <div
+            class="font-bold text-2xl sm:text-3xl md:text-3xl lg:text-3xl xl:text-3xl py-2 text-left"
+          >
             Don't miss anything
           </div>
           <div class="flex">
-            <input type="text" class="rounded h-10 w-9/12 sm:w-5/12 md:w-5/12 lg:w-5/12 xl:w-5/12" />
-            <button class="subscribe-button font-bold text-base py-1 px-4 sm:px-10 md:px-10 lg:px-10 xl:px-10">
+            <input
+              type="text"
+              class="rounded h-10 w-9/12 sm:w-5/12 md:w-5/12 lg:w-5/12 xl:w-5/12"
+            />
+            <button
+              class="subscribe-button font-bold text-base py-1 px-4 sm:px-10 md:px-10 lg:px-10 xl:px-10"
+            >
               Subscribe
             </button>
           </div>
@@ -518,6 +599,39 @@
       document.getElementById("nav-toggle").onclick = function () {
         document.getElementById("nav-content").classList.toggle("hidden");
       };
+
+      //Script modal
+      var openmodal = document.querySelectorAll(".modal-open");
+      for (var i = 0; i < openmodal.length; i++) {
+        openmodal[i].addEventListener("click", function (event) {
+          event.preventDefault();
+          toggleModal();
+        });
+      }
+
+      const overlay = document.querySelector(".modal-overlay");
+      overlay.addEventListener("click", toggleModal, stopVideo);
+
+      var closemodal = document.querySelectorAll(".modal-close");
+      for (var i = 0; i < closemodal.length; i++) {
+        closemodal[i].addEventListener("click", toggleModal);
+        closemodal[i].addEventListener("click", stopVideo);
+      }
+
+      var modalVid = document.querySelector(".modal-vid");
+
+      function stopVideo() {
+        modalVid.pause();
+        modalVid.currentTime = 0;
+      }
+
+      function toggleModal() {
+        const body = document.querySelector("body");
+        const modal = document.querySelector(".modal");
+        modal.classList.toggle("opacity-0");
+        modal.classList.toggle("pointer-events-none");
+        body.classList.toggle("modal-active");
+      }
     </script>
   </body>
 </html>
