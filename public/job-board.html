@@ -8,12 +8,41 @@
   </head>
   <body>
     <!-- Search -->
-    <div class="Search">
-      Find your dreamed Job
-      <input />
-      <button>Category</button>
-    </div>
-
+    <header class="border-box">
+      <div class="relative flex justify-start">
+        <img src="img/job-board/complete_background.png" />
+        <div class="absolute my-16 ml-64 pl-10">
+          <div class="text-left text-white text-5xl mb-4">
+            <p>
+              Find your dreamed Job
+            </p>
+          </div>
+          <div class="flex">
+            <input type="text" class="rounded h-10 w-11/12 mr-1 px-64" />
+            <div class="absolute pl-3 text-lg font-medium text-gray-500 mt-2">
+              <p>
+                Backend developer
+              </p>
+            </div>
+            <button class="subscribe-button font-bold py-1 w-64 flex justify-center">
+              <p class="text-left text-lg">
+                Category
+              </p>
+              <img src="img/job-board/down_arrow.png" class="ml-2 mt-3">
+            </button>
+          </div>
+          <div class="mt-2">
+            <p class="text-white">
+              Don't you have an account?
+              <span class="text-secondary">Register</span>
+            </p>
+            <p class="text-white">
+              <span class="text-secondary">Sign in </span>instead
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
     <!-- End Search -->
     <!-- Results -->
     <div class="results container mx-auto">
