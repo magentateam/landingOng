@@ -41,8 +41,8 @@
     </header>
     <!-- End Search -->
     <!-- Filters-->
-    <div class="flex-row justify-around w-full container mx-auto">
-      <div class="my-10 ml-40 pb-2 w-1/4 h-full shadow-2xl rounded-md">
+    <div class="flex flex-row w-full container mx-auto">
+      <div class="my-10 ml-40 mr-6 pb-2 w-1/4 h-full shadow-2xl rounded-md">
         <div class="my-3 mx-8">
           <h1 class="text-primary font-semibold text-3xl">Filters</h1>
         </div>
@@ -106,8 +106,33 @@
           </div>
         </div>
       </div>
+
+      <!-- End Filters-->
+
+      <!-- Search box-->
+      <div
+        class="container bg-primary flex flex-col ml-4 mt-10 rounded-md w-1/2 h-32"
+      >
+        <div class="ml-6 mt-4 text-white font-semibold text-2xl w-full">
+          <p>Be the first to apply, don't miss new oportunities.</p>
+        </div>
+        <div class="flex flex-row ml-6 mt-4 text-xl w-full">
+          <div class="w-7/12 mr-2">
+            <input
+              type="text"
+              placeholder="example@company.com"
+              class="rounded w-full h-10 pl-2"
+            />
+          </div>
+          <div>
+            <button class="subscribe-button font-semibold w-40 h-10">
+              <p class="text-2xl">Subscribe</p>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- End Filters-->
+    <!-- End search box-->
     <!-- Results -->
     <div class="results container mx-auto">
       <div class="filters">
