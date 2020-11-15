@@ -11,7 +11,7 @@
       <!--Navbar-->
       <nav
         id="header"
-        class="absolute flex items-center justify-between flex-wrap bg-primary fixed w-full z-10"
+        class="flex items-center justify-between flex-wrap bg-primary fixed w-full z-10"
       >
         <div
           class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0"
@@ -20,7 +20,7 @@
             <a href="/public/index.html">
               <img
                 src="./img/logo-white.svg"
-                class="h-24 w-24 inline-block fill-current"
+                class="h-20 w-20 inline-block fill-current"
               />
             </a>
           </div>
@@ -50,21 +50,21 @@
             <ul class="list-reset lg:flex justify-end flex-1 items-center">
               <li class="mr-3">
                 <a
-                  class="inline-block hover:text-secondary transition-colors duration-1000 ease-in-out text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-2xl font-roboto"
+                  class="inline-block hover:text-secondary transition-colors duration-1000 ease-in-out text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-xl font-roboto"
                   href="#courses"
                   >Courses</a
                 >
               </li>
               <li class="mr-3">
                 <a
-                  class="inline-block hover:text-secondary transition-colors duration-1000 ease-in-out text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-2xl font-roboto"
+                  class="inline-block hover:text-secondary transition-colors duration-1000 ease-in-out text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-xl font-roboto"
                   href="#events"
                   >Events</a
                 >
               </li>
               <li class="mr-3">
                 <a
-                  class="inline-block hover:text-secondary transition-colors duration-1000 ease-in-out text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-2xl font-roboto"
+                  class="inline-block text-white no-underline py-2 px-4 text-xl font-roboto"
                   href="/public/job-board.html"
                   >Job Board
                   <div class="border-b-2 border-orange-600"></div>
@@ -72,9 +72,9 @@
               </li>
               <li class="mr-3">
                 <a
-                  class="inline-block hover:text-secondary transition-colors duration-1000 ease-in-out text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-2xl font-roboto"
+                  class="inline-block hover:text-secondary transition-colors duration-1000 ease-in-out text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-xl font-roboto"
                   href="/public/about-us.html"
-                  >Contact</a
+                  >About Us</a
                 >
               </li>
             </ul>
@@ -84,7 +84,7 @@
       <!--Navbar end-->
     </header>
     <!-- Search -->
-    <header class="border-box mx-auto relative pt-24">
+    <header class="border-box mx-auto relative pt-20">
       <img src="img/job-board/complete_background.png" />
       <div class="absolute inset-0 flex justify-center">
         <div class="mt-40 ml-8" style="width: 800px">
@@ -412,5 +412,12 @@
         </div>
       </div>
     </div>
+
+    <script>
+       // Script toggle menu
+       document.getElementById("nav-toggle").onclick = function () {
+        document.getElementById("nav-content").classList.toggle("hidden");
+      };
+    </script>
   </body>
 </html>
