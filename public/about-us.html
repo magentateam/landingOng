@@ -16,7 +16,7 @@
       <!--Navbar-->
       <nav
         id="header"
-        class="absolute flex items-center justify-between flex-wrap bg-primary fixed w-full z-10"
+        class="flex items-center justify-between flex-wrap bg-primary fixed w-full z-10"
       >
         <div
           class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0"
@@ -25,7 +25,7 @@
             <a href="#">
               <img
                 src="./img/logo-white.svg"
-                class="h-24 w-24 inline-block fill-current"
+                class="h-20 w-20 inline-block fill-current"
               />
             </a>
           </div>
@@ -55,31 +55,32 @@
             <ul class="list-reset lg:flex justify-end flex-1 items-center">
               <li class="mr-3">
                 <a
-                  class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-2xl font-roboto"
+                  class="inline-block hover:text-secondary transition-colors duration-1000 ease-in-out text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-xl font-roboto"
                   href="#courses"
                   >Courses</a
                 >
               </li>
               <li class="mr-3">
                 <a
-                  class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-2xl font-roboto"
+                  class="inline-block hover:text-secondary transition-colors duration-1000 ease-in-out text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-xl font-roboto"
                   href="#events"
                   >Events</a
                 >
               </li>
               <li class="mr-3">
                 <a
-                  class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-2xl font-roboto"
+                  class="inline-block hover:text-secondary transition-colors duration-1000 ease-in-out text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-xl font-roboto"
                   href="#job-board"
                   >Job Board</a
                 >
               </li>
               <li class="mr-3">
                 <a
-                  class="inline-block text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-2xl font-roboto"
+                  class="inline-block text-white no-underline py-2 px-4 text-xl font-roboto"
                   href="#contact"
-                  >Contact</a
-                >
+                  >About Us
+                  <div class="border-b-2 border-orange-600"></div>
+                </a>
               </li>
             </ul>
           </div>
@@ -87,26 +88,19 @@
       </nav>
       <!--Navbar end-->
 
-      <!--Video section-->
-      <section
-        class="background-video w-full h-screen min-w-12 overflow-hidden flex justify-center"
-      >
-        <video
-          class="absolute object-fill sm:object-fill md:object-cover lg:object-cover xl:object-cover w-screen h-screen"
-          playsinline
-          autoplay
-          muted
-          loop
-        >
-          <source src="./media/header-vid.mp4#t=,9,35" />
-        </video>
+      <!--Image section-->
+      <section>
+       <div class="relative">
+         <img class="w-full py-20" src="./img/about_us/header-about.png" alt="">
+       </div>
         <div
-          class="relative w-3/4 text-white flex justify-center items-start flex-col min-h-full sm:text-left"
+          class="absolute top-0 py-64 pl-24 px-24 w-3/4 text-white flex justify-center items-start flex-col min-h-full sm:text-left"
         >
           <h1
-            class="z-auto font-trispace text-4xl sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl leading-none"
+            class="z-auto font-trispace sm:text-5xl md:text-6xl lg:text-6xl xl:text-7xl leading-none"
           >
-            Discover our vision.
+            About <br>
+            Us.
           </h1>
         </div>
       </section>
