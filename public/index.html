@@ -14,10 +14,9 @@
   </head>
 
   <body>
-    <header>
+    <header id="header">
       <!--Navbar-->
       <nav
-        id="header"
         class="flex items-center justify-between flex-wrap bg-primary fixed w-full z-10"
       >
         <div
@@ -120,8 +119,12 @@
           /></a>
         </div>
       </section>
-      <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center transition duration-700 ease-in-out">
-        <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+      <div
+        class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center transition duration-700 ease-in-out"
+      >
+        <div
+          class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"
+        ></div>
         <div class="modal-lg bg-white mx-auto rounded z-50 w-2/4 h-auto">
           <div
             class="modal-close absolute top-0 right-0 cursor-pointer mt-4 mr-4 z-50"
@@ -591,12 +594,14 @@
         </div>
         <hr class="my-4" />
         <div class="w-full text-center">
-          <img
-            src="img/logo.png"
-            class="ml-auto mr-auto w-1/12"
-            alt="Imagen de logo"
-            srcset=""
-          />
+          <a href="#header">
+            <img
+              src="img/logo.png"
+              class="ml-auto mr-auto w-1/12"
+              alt="Imagen de logo"
+              srcset=""
+            />
+          </a>
           <div>2020 ©</div>
         </div>
       </div>

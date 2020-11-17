@@ -22375,6 +22375,10 @@ video {
           animation: bounce 1s infinite;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .primary-gradient {
   background: linear-gradient(266.42deg, #7129E4 0%, #9B51E0 100%);
 }
