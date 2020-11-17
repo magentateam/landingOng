@@ -14,17 +14,16 @@
   </head>
 
   <body>
-    <header>
+    <header id="header">
       <!--Navbar-->
       <nav
-        id="header"
         class="flex items-center justify-between flex-wrap bg-primary fixed w-full z-10"
       >
         <div
           class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0"
         >
           <div class="flex items-center">
-            <a href="#">
+            <a href="index.html">
               <img
                 src="./img/logo-white.svg"
                 class="h-20 w-20 inline-block fill-current"
@@ -36,7 +35,7 @@
           <div class="block lg:hidden pr-4">
             <button
               id="nav-toggle"
-              class="flex items-center px-3 py-2 border rounded text-white-500 border-white-600 hover:text-gray-800 hover:border-white-500 appearance-none focus:outline-none"
+              class="flex items-center px-3 py-2 border rounded text-white border-white-600 hover:text-gray-800 hover:border-white-500 appearance-none focus:outline-none"
             >
               <svg
                 class="fill-current h-3 w-3 white"
@@ -58,29 +57,22 @@
               <li class="mr-3">
                 <a
                   class="inline-block text-white no-underline py-2 px-4 text-xl font-roboto"
-                  href="#courses"
-                  >Courses
+                  href="/index.html"
+                  >Home
                   <div class="border-b-2 border-orange-600"></div>
                 </a>
               </li>
               <li class="mr-3">
                 <a
                   class="inline-block text-white no-underline hover:text-secondary transition-colors duration-1000 ease-in-out py-2 px-4 text-xl font-roboto"
-                  href="#events"
-                  >Events</a
-                >
-              </li>
-              <li class="mr-3">
-                <a
-                  class="inline-block text-white no-underline hover:text-secondary transition-colors duration-1000 ease-in-out py-2 px-4 text-xl font-roboto"
-                  href="#job-board"
+                  href="/job-board.html"
                   >Job Board</a
                 >
               </li>
               <li class="mr-3">
                 <a
                   class="inline-block text-white no-underline hover:text-secondary transition-colors duration-1000 ease-in-out py-2 px-4 text-xl font-roboto"
-                  href="#contact"
+                  href="about-us.html"
                   >About Us</a
                 >
               </li>
@@ -120,31 +112,18 @@
           /></a>
         </div>
       </section>
-      <div class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center transition duration-700 ease-in-out">
-        <div class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"></div>
+      <div
+        class="modal opacity-0 pointer-events-none fixed w-full h-full top-0 left-0 flex items-center justify-center transition duration-700 ease-in-out z-10"
+      >
+        <div
+          class="modal-overlay absolute w-full h-full bg-gray-900 opacity-50"
+        ></div>
         <div class="modal-lg bg-white mx-auto rounded z-50 w-2/4 h-auto">
-          <div
-            class="modal-close absolute top-0 right-0 cursor-pointer mt-4 mr-4 z-50"
-          >
-            <svg
-              class="fill-current"
-              xmlns="http://www.w3.org/2000/svg"
-              width="18"
-              height="18"
-              viewBox="0 0 18 18"
-            >
-              <path
-                d="M14.53 4.53l-1.06-1.06L9 7.94 4.53 3.47 3.47 4.53 7.94 9l-4.47 4.47 1.06 1.06L9 10.06l4.47 4.47 1.06-1.06L10.06 9z"
-              ></path>
-            </svg>
-            <span class="text-sm">(Esc)</span>
-          </div>
-
-          <div class="modal-content py-4 px-6">
-            <div class="flex justify-end pb-3">
+          <div class="modal-content relative">
+            <div class="absolute right-0 p-4 z-10">
               <div class="modal-close cursor-pointer z-50">
                 <svg
-                  class="fill-current text-black"
+                  class="fill-current text-white"
                   xmlns="http://www.w3.org/2000/svg"
                   width="18"
                   height="18"
@@ -584,19 +563,20 @@
           </div>
           <div class="text-left">
             <div class="font-bold text-3xl">Discover</div>
-            <div>Events</div>
             <div>Open Positions</div>
             <div>Connect</div>
           </div>
         </div>
         <hr class="my-4" />
         <div class="w-full text-center">
-          <img
-            src="img/logo.png"
-            class="ml-auto mr-auto w-1/12"
-            alt="Imagen de logo"
-            srcset=""
-          />
+          <a href="#header">
+            <img
+              src="img/logo.png"
+              class="ml-auto mr-auto w-1/12"
+              alt="Imagen de logo"
+              srcset=""
+            />
+          </a>
           <div>2020 ©</div>
         </div>
       </div>

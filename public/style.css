@@ -22375,6 +22375,14 @@ video {
           animation: bounce 1s infinite;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+.modal-active {
+  overflow: hidden;
+}
+
 .primary-gradient {
   background: linear-gradient(266.42deg, #7129E4 0%, #9B51E0 100%);
 }
@@ -22462,6 +22470,11 @@ video {
   color: #fff;
   color: rgba(255, 255, 255, var(--text-opacity));
   border-radius: 0.25rem;
+}
+
+.search-button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
 }
 
 .background-images {

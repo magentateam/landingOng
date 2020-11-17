@@ -7,17 +7,16 @@
     <title>Job Board</title>
   </head>
   <body>
-    <header>
+    <header id="header">
       <!--Navbar-->
       <nav
-        id="header"
         class="flex items-center justify-between flex-wrap bg-primary fixed w-full z-10"
       >
         <div
           class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0"
         >
           <div class="flex items-center">
-            <a href="/public/index.html">
+            <a href="index.html">
               <img
                 src="./img/logo-white.svg"
                 class="h-20 w-20 inline-block fill-current"
@@ -29,7 +28,7 @@
           <div class="block lg:hidden pr-4">
             <button
               id="nav-toggle"
-              class="flex items-center px-3 py-2 border rounded text-white-500 border-white-600 hover:text-gray-800 hover:border-white-500 appearance-none focus:outline-none"
+              class="flex items-center px-3 py-2 border rounded text-white border-white-600 hover:text-gray-800 hover:border-white-500 appearance-none focus:outline-none"
             >
               <svg
                 class="fill-current h-3 w-3 white"
@@ -51,21 +50,14 @@
               <li class="mr-3">
                 <a
                   class="inline-block hover:text-secondary transition-colors duration-1000 ease-in-out text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-xl font-roboto"
-                  href="#courses"
-                  >Courses</a
-                >
-              </li>
-              <li class="mr-3">
-                <a
-                  class="inline-block hover:text-secondary transition-colors duration-1000 ease-in-out text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-xl font-roboto"
-                  href="#events"
-                  >Events</a
+                  href="index.html"
+                  >Home</a
                 >
               </li>
               <li class="mr-3">
                 <a
                   class="inline-block text-white no-underline py-2 px-4 text-xl font-roboto"
-                  href="/public/job-board.html"
+                  href="job-board.html"
                   >Job Board
                   <div class="border-b-2 border-orange-600"></div>
                 </a>
@@ -73,7 +65,7 @@
               <li class="mr-3">
                 <a
                   class="inline-block hover:text-secondary transition-colors duration-1000 ease-in-out text-white no-underline hover:text-gray-800 hover:text-underline py-2 px-4 text-xl font-roboto"
-                  href="/public/about-us.html"
+                  href="about-us.html"
                   >About Us</a
                 >
               </li>
@@ -88,27 +80,24 @@
       <img src="img/job-board/complete_background.png" />
       <div class="absolute inset-0 flex justify-center">
         <div class="mt-40 ml-8" style="width: 800px">
-          <div class="text-left text-white text-5xl mb-4">
+          <div class="text-left text-white text-5xl">
             <p>Find your dreamed Job</p>
           </div>
-          <div class="flex">
-            <input type="text" class="rounded h-10 w-11/12 mr-1" />
+          <div class="flex my-6">
+            <input type="text" class="rounded-l-md h-10 w-11/12" />
             <div class="absolute pl-3 text-lg font-medium text-gray-500 mt-2">
               <p>Backend developer</p>
             </div>
             <button
-              class="subscribe-button font-bold py-1 w-64 flex justify-center"
+              class="subscribe-button search-button font-bold py-1 w-64 flex justify-center rounded-r-md"
             >
-              <p class="text-left text-lg">Category</p>
-              <img src="img/job-board/down_arrow.png" class="ml-2 mt-3" />
+              <p class="text-left text-lg">Search</p>
             </button>
           </div>
           <div class="mt-2">
             <p class="text-white">
               Don't you have an account?
-              <span class="text-secondary">Register</span>
-            </p>
-            <p class="text-white">
+              <span class="text-secondary">Register</span> or
               <span class="text-secondary">Sign in </span>instead
             </p>
           </div>
@@ -210,7 +199,9 @@
         </div>
         <!-- End search box-->
         <!-- Results -->
-        <div class="container flex flex-col rounded-md shadow-2xl w-11/12 h-full">
+        <div
+          class="container flex flex-col rounded-md shadow-2xl w-11/12 h-full"
+        >
           <section class="flex flex-row w-full mb-1 mt-3 ml-3">
             <div class="relative mx-2 mr-4">
               <img
@@ -221,132 +212,167 @@
             <div class="w-11/12 mr-24">
               <h1 class="text-primary font-semibold text-xl">Product owner</h1>
               <p class="w-full h-16">
-                Diam volutpat pretium purus hac ligula nec suspendisse aliquam rutrum egestas montes, arcu orci nisl, magna sit aliquam id et.
+                Diam volutpat pretium purus hac ligula nec suspendisse aliquam
+                rutrum egestas montes, arcu orci nisl, magna sit aliquam id et.
               </p>
               <div class="flex flex-row">
-                <img src="./img/about_us/calendar_icon.png" class="w-4 h-4 mt-1 mr-2">
+                <img
+                  src="./img/about_us/calendar_icon.png"
+                  class="w-4 h-4 mt-1 mr-2"
+                />
                 <p class="mr-4">12 NOV</p>
-                <img src="./img/about_us/clock_icon.png" class="w-4 h-4 mt-1 mr-2">
+                <img
+                  src="./img/about_us/clock_icon.png"
+                  class="w-4 h-4 mt-1 mr-2"
+                />
                 <p class="mr-4">Full-Time</p>
-                <img src="./img/about_us/path_icon.png" class="w-5 h-5 mr-2">
-                <p class="mr-4">Buenos Aires, Argentina</p>                
+                <img src="./img/about_us/path_icon.png" class="w-5 h-5 mr-2" />
+                <p class="mr-4">Buenos Aires, Argentina</p>
               </div>
             </div>
           </section>
-          <hr class="ml-4 mr-10 my-2">
+          <hr class="ml-4 mr-10 my-2" />
           <section class="flex flex-row w-full mb-1 mt-1 ml-3">
             <div class="relative mx-2 mr-4">
               <img
-                src="https://fontmeme.com/images/disney-logo.png"
+                src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
                 class="w-40 h-32 rounded-md border-solid border mr-6"
               />
             </div>
             <div class="w-11/12 mr-24">
-              <h1 class="text-primary font-semibold text-xl">Product owner</h1>
+              <h1 class="text-primary font-semibold text-xl">
+                QA Analist Ssr.
+              </h1>
               <p class="w-full h-16">
-                Diam volutpat pretium purus hac ligula nec suspendisse aliquam rutrum egestas montes, arcu orci nisl, magna sit aliquam id et.
+                Buen Lunes Red, Empezamos la semana con todo🚀, abriendo nuevas
+                oportunidades laborales con excelentes condiciones!
               </p>
               <div class="flex flex-row">
-                <img src="./img/about_us/calendar_icon.png" class="w-4 h-4 mt-1 mr-2">
+                <img
+                  src="./img/about_us/calendar_icon.png"
+                  class="w-4 h-4 mt-1 mr-2"
+                />
                 <p class="mr-4">12 NOV</p>
-                <img src="./img/about_us/clock_icon.png" class="w-4 h-4 mt-1 mr-2">
+                <img
+                  src="./img/about_us/clock_icon.png"
+                  class="w-4 h-4 mt-1 mr-2"
+                />
                 <p class="mr-4">Full-Time</p>
-                <img src="./img/about_us/path_icon.png" class="w-5 h-5 mr-2">
-                <p class="mr-4">Buenos Aires, Argentina</p>                
+                <img src="./img/about_us/path_icon.png" class="w-5 h-5 mr-2" />
+                <p class="mr-4">Buenos Aires, Argentina</p>
               </div>
             </div>
           </section>
-          <hr class="ml-4 mr-10 my-2">
+          <hr class="ml-4 mr-10 my-2" />
           <section class="flex flex-row w-full mb-1 mt-1 ml-3">
             <div class="relative mx-2 mr-4">
               <img
-                src="https://fontmeme.com/images/disney-logo.png"
+                src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"
                 class="w-40 h-32 rounded-md border-solid border mr-6"
               />
             </div>
             <div class="w-11/12 mr-24">
-              <h1 class="text-primary font-semibold text-xl">Product owner</h1>
+              <h1 class="text-primary font-semibold text-xl">
+                Frontend Engineer
+              </h1>
               <p class="w-full h-16">
-                Diam volutpat pretium purus hac ligula nec suspendisse aliquam rutrum egestas montes, arcu orci nisl, magna sit aliquam id et.
+                Aquí estaremos con Eliana Sabakowsky mañana a las 19.00 hs.
+                ¡Invitamos a todos los interesados a sumarse a esta charla!
               </p>
               <div class="flex flex-row">
-                <img src="./img/about_us/calendar_icon.png" class="w-4 h-4 mt-1 mr-2">
+                <img
+                  src="./img/about_us/calendar_icon.png"
+                  class="w-4 h-4 mt-1 mr-2"
+                />
                 <p class="mr-4">12 NOV</p>
-                <img src="./img/about_us/clock_icon.png" class="w-4 h-4 mt-1 mr-2">
+                <img
+                  src="./img/about_us/clock_icon.png"
+                  class="w-4 h-4 mt-1 mr-2"
+                />
                 <p class="mr-4">Full-Time</p>
-                <img src="./img/about_us/path_icon.png" class="w-5 h-5 mr-2">
-                <p class="mr-4">Buenos Aires, Argentina</p>                
+                <img src="./img/about_us/path_icon.png" class="w-5 h-5 mr-2" />
+                <p class="mr-4">Buenos Aires, Argentina</p>
               </div>
             </div>
           </section>
-          <hr class="ml-4 mr-10 my-2">
+          <hr class="ml-4 mr-10 my-2" />
           <section class="flex flex-row w-full mb-1 mt-1 ml-3">
             <div class="relative mx-2 mr-4">
               <img
-                src="https://fontmeme.com/images/disney-logo.png"
+                src="https://pbs.twimg.com/profile_images/1276148522560237568/syXPGoA5_400x400.png"
                 class="w-40 h-32 rounded-md border-solid border mr-6"
               />
             </div>
             <div class="w-11/12 mr-24">
-              <h1 class="text-primary font-semibold text-xl">Product owner</h1>
+              <h1 class="text-primary font-semibold text-xl">
+                Backend Developer
+              </h1>
               <p class="w-full h-16">
-                Diam volutpat pretium purus hac ligula nec suspendisse aliquam rutrum egestas montes, arcu orci nisl, magna sit aliquam id et.
+                Buen lunes!! 😁 Desde TradeHelm, Inc. te estamos buscando!
+                Sumate a nuestros equipos 100% remotos desde Argentina 🎉
               </p>
               <div class="flex flex-row">
-                <img src="./img/about_us/calendar_icon.png" class="w-4 h-4 mt-1 mr-2">
+                <img
+                  src="./img/about_us/calendar_icon.png"
+                  class="w-4 h-4 mt-1 mr-2"
+                />
                 <p class="mr-4">12 NOV</p>
-                <img src="./img/about_us/clock_icon.png" class="w-4 h-4 mt-1 mr-2">
+                <img
+                  src="./img/about_us/clock_icon.png"
+                  class="w-4 h-4 mt-1 mr-2"
+                />
                 <p class="mr-4">Full-Time</p>
-                <img src="./img/about_us/path_icon.png" class="w-5 h-5 mr-2">
-                <p class="mr-4">Buenos Aires, Argentina</p>                
+                <img src="./img/about_us/path_icon.png" class="w-5 h-5 mr-2" />
+                <p class="mr-4">Buenos Aires, Argentina</p>
               </div>
             </div>
           </section>
-          <hr class="ml-4 mr-10 my-2">
+          <hr class="ml-4 mr-10 my-2" />
           <section class="flex flex-row w-full mb-1 mt-1 ml-3">
             <div class="relative mx-2 mr-4">
               <img
-                src="https://fontmeme.com/images/disney-logo.png"
+                src="https://pbs.twimg.com/profile_images/1276148522560237568/syXPGoA5_400x400.png"
                 class="w-40 h-32 rounded-md border-solid border mr-6"
               />
             </div>
             <div class="w-11/12 mr-24">
-              <h1 class="text-primary font-semibold text-xl">Product owner</h1>
+              <h1 class="text-primary font-semibold text-xl">UX/UI Designer</h1>
               <p class="w-full h-16">
-                Diam volutpat pretium purus hac ligula nec suspendisse aliquam rutrum egestas montes, arcu orci nisl, magna sit aliquam id et.
+                • hace 5 días A few months ago I celebrated two years at Glovo.
+                And the journey has been incredible from day one!
               </p>
               <div class="flex flex-row">
-                <img src="./img/about_us/calendar_icon.png" class="w-4 h-4 mt-1 mr-2">
+                <img
+                  src="./img/about_us/calendar_icon.png"
+                  class="w-4 h-4 mt-1 mr-2"
+                />
                 <p class="mr-4">12 NOV</p>
-                <img src="./img/about_us/clock_icon.png" class="w-4 h-4 mt-1 mr-2">
+                <img
+                  src="./img/about_us/clock_icon.png"
+                  class="w-4 h-4 mt-1 mr-2"
+                />
                 <p class="mr-4">Full-Time</p>
-                <img src="./img/about_us/path_icon.png" class="w-5 h-5 mr-2">
-                <p class="mr-4">Buenos Aires, Argentina</p>                
+                <img src="./img/about_us/path_icon.png" class="w-5 h-5 mr-2" />
+                <p class="mr-4">Buenos Aires, Argentina</p>
               </div>
             </div>
           </section>
-          <hr class="ml-4 mr-10 my-2">
+          <hr class="ml-4 mr-10 my-2" />
           <div class="flex justify-center h-16 pt-8 mb-5">
             <button
               class="primary-gradient rounded-md text-white w-8 flex justify-center"
             >
-            <p class="mt-1">
-              1
-            </p>
+              <p class="mt-1">1</p>
             </button>
             <button
               class="primary-gradient rounded-md text-white mx-2 w-8 flex justify-center"
             >
-            <p class="mt-1">
-              2
-            </p>
+              <p class="mt-1">2</p>
             </button>
             <button
               class="primary-gradient rounded-md text-white mx-5 w-20 flex justify-center"
             >
-            <p class=mt-1>
-              NEXT
-            </p>
+              <p class="mt-1">NEXT</p>
             </button>
           </div>
         </div>
@@ -395,27 +421,28 @@
           </div>
           <div class="text-left">
             <div class="font-bold text-3xl">Discover</div>
-            <div>Events</div>
             <div>Open Positions</div>
             <div>Connect</div>
           </div>
         </div>
         <hr class="my-4" />
         <div class="w-full text-center">
-          <img
-            src="img/logo.png"
-            class="ml-auto mr-auto w-1/12"
-            alt="Imagen de logo"
-            srcset=""
-          />
+          <a href="#header">
+            <img
+              src="img/logo.png"
+              class="ml-auto mr-auto w-1/12"
+              alt="Imagen de logo"
+              srcset=""
+            />
+          </a>
           <div>2020 ©</div>
         </div>
       </div>
     </div>
 
     <script>
-       // Script toggle menu
-       document.getElementById("nav-toggle").onclick = function () {
+      // Script toggle menu
+      document.getElementById("nav-toggle").onclick = function () {
         document.getElementById("nav-content").classList.toggle("hidden");
       };
     </script>
