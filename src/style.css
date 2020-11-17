@@ -64,6 +64,11 @@ html {
     @apply secondary-gradient text-white rounded;
 }
 
+.search-button {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
 .background-images {
     z-index: -1;
     margin-top: 100vh;
