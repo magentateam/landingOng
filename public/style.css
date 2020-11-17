@@ -22379,6 +22379,10 @@ html {
   scroll-behavior: smooth;
 }
 
+.modal-active {
+  overflow: hidden;
+}
+
 .primary-gradient {
   background: linear-gradient(266.42deg, #7129E4 0%, #9B51E0 100%);
 }

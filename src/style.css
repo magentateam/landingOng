@@ -14,6 +14,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.modal-active {
+    overflow: hidden;
+}
+
 .primary-gradient {
     background: linear-gradient(266.42deg, theme('colors.gradients.primary.1') 0%, theme('colors.gradients.primary.2') 100%);
 }
