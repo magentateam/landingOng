@@ -1,0 +1,55 @@
+.header-img {
+    width: 100%;
+    height: 50vh;
+    background-image: url('../img/about_us/header-about.png');
+    background-position: center;
+    background-size: cover;
+    color: white;
+    display: flex;
+
+    .aire {
+        height: 30%;
+    }
+}
+
+.card {
+    padding: 20px;
+
+    .card-title {
+        font-size: 1.5rem;
+    }
+
+    .redes {
+        margin-top: 15px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+
+        .icon {
+            margin: 0 auto;
+
+            ion-icon {
+                font-size: 2em;
+            }
+        }
+    }
+
+    .cv-button {
+        width: 100%;
+        padding: 10px;
+        background-color: #9B51E0;
+        color: white;
+        border-radius: 5px;
+        margin: 15px 0 0 0;
+
+        &:hover {
+            transform: scale(1.05);
+            transition: 100ms ease-in-out;
+        }
+    }
+}
+
+footer {
+    margin-top: 3em;
+    padding: 1em 0;
+}

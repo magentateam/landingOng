@@ -1,0 +1,63 @@
+.header-img {
+  width: 100%;
+  height: 50vh;
+  background-image: url("../img/about_us/header-about.png");
+  background-position: center;
+  background-size: cover;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header-img .aire {
+  height: 30%;
+}
+
+.card {
+  padding: 20px;
+}
+
+.card .card-title {
+  font-size: 1.5rem;
+}
+
+.card .redes {
+  margin-top: 15px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.card .redes .icon {
+  margin: 0 auto;
+}
+
+.card .redes .icon ion-icon {
+  font-size: 2em;
+}
+
+.card .cv-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #9B51E0;
+  color: white;
+  border-radius: 5px;
+  margin: 15px 0 0 0;
+}
+
+.card .cv-button:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-transition: 100ms ease-in-out;
+  transition: 100ms ease-in-out;
+}
+
+footer {
+  margin-top: 3em;
+  padding: 1em 0;
+}
