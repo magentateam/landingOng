@@ -84,10 +84,7 @@
             <p>Find your dreamed Job</p>
           </div>
           <div class="flex my-6">
-            <input type="text" class="rounded-l-md h-10 w-11/12" />
-            <div class="absolute pl-3 text-lg font-medium text-gray-500 mt-2">
-              <p>Backend developer</p>
-            </div>
+            <input placeholder="Backend Developer" type="text" class="rounded-l-md h-10 w-11/12 px-3" />
             <button
               class="subscribe-button search-button font-bold py-1 w-64 flex justify-center rounded-r-md"
             >
@@ -198,9 +195,11 @@
           </div>
         </div>
         <!-- End search box-->
-        <!-- Results -->
+        <!-- Results Page 1-->
         <div
           class="container flex flex-col rounded-md shadow-2xl w-11/12 h-full"
+          id="page_1"
+          style="display: block"
         >
           <section class="flex flex-row w-full mb-1 mt-3 ml-3">
             <div class="relative mx-2 mr-4">
@@ -366,6 +365,7 @@
             </button>
             <button
               class="primary-gradient rounded-md text-white mx-2 w-8 flex justify-center"
+              onclick="change_page_2()"
             >
               <p class="mt-1">2</p>
             </button>
@@ -376,9 +376,188 @@
             </button>
           </div>
         </div>
+        <!-- End Results Page 1-->
+        <div
+          class="container flex flex-col rounded-md shadow-2xl w-11/12 h-full"
+          id="page_2"
+          style="display: none"
+        >
+          <section
+            class="flex flex-row w-full mb-1 mt-3 ml-3"
+            id="product_owner"
+          >
+            <div class="relative mx-2 mr-4">
+              <img
+                src="https://media-exp1.licdn.com/dms/image/C4D0BAQHc8kHeiYzjPA/company-logo_200_200/0?e=1613606400&v=beta&t=OSBR-4k7V8Hn_LpIlr6KqlzE1ntVxs5ghNwVeaC91Y4"
+                class="w-40 h-32 rounded-md border-solid border mr-6"
+              />
+            </div>
+            <div class="w-11/12 mr-24">
+              <h1 class="text-primary font-semibold text-xl">Desarrollador Frontend</h1>
+              <p class="w-full h-16">
+                Se parte del equipo del equipo, en TGV contamos con proyectos tanto locales como internacionales.
+              </p>
+              <div class="flex flex-row">
+                <img
+                  src="./img/about_us/calendar_icon.png"
+                  class="w-4 h-4 mt-1 mr-2"
+                />
+                <p class="mr-4">22 NOV</p>
+                <img
+                  src="./img/about_us/clock_icon.png"
+                  class="w-4 h-4 mt-1 mr-2"
+                />
+                <p class="mr-4">Part-Time</p>
+                <img src="./img/about_us/path_icon.png" class="w-5 h-5 mr-2" />
+                <p class="mr-4">Buenos Aires y alrededores</p>
+              </div>
+            </div>
+          </section>
+          <hr class="ml-4 mr-10 my-2" />
+          <section class="flex flex-row w-full mb-1 mt-1 ml-3" id="github">
+            <div class="relative mx-2 mr-4">
+              <img
+                src="https://media-exp1.licdn.com/dms/image/C4D0BAQErxW_xwwUUfQ/company-logo_200_200/0?e=1613606400&v=beta&t=BuNuNWNYstPo0J4LmgoDQWlCbQrJ4ZL5T3ZTzkj_hIg"
+                class="w-40 h-32 rounded-md border-solid border mr-6"
+              />
+            </div>
+            <div class="w-11/12 mr-24">
+              <h1 class="text-primary font-semibold text-xl">
+                Ingeniera / Ingeniero de Software Frontend
+              </h1>
+              <p class="w-full h-16">
+                En ML te estamos buscando! Somos una empresa súper innovadora por los servicios que ofrecemos y los productos que desarrollamos.
+              </p>
+              <div class="flex flex-row">
+                <img
+                  src="./img/about_us/calendar_icon.png"
+                  class="w-4 h-4 mt-1 mr-2"
+                />
+                <p class="mr-4">19 NOV</p>
+                <img
+                  src="./img/about_us/clock_icon.png"
+                  class="w-4 h-4 mt-1 mr-2"
+                />
+                <p class="mr-4">Full-Time</p>
+                <img src="./img/about_us/path_icon.png" class="w-5 h-5 mr-2" />
+                <p class="mr-4">Córdoba, Argentina</p>
+              </div>
+            </div>
+          </section>
+          <hr class="ml-4 mr-10 my-2" />
+          <section class="flex flex-row w-full mb-1 mt-1 ml-3">
+            <div class="relative mx-2 mr-4">
+              <img
+                src="https://media-exp1.licdn.com/dms/image/C4E0BAQFZPUI7F4GPgw/company-logo_200_200/0?e=1613606400&v=beta&t=PyTFIeBX-o3A8Dux3EdCdnj1d2eTMp8ZXFxiOdctQ0s"
+                class="w-40 h-32 rounded-md border-solid border mr-6"
+              />
+            </div>
+            <div class="w-11/12 mr-24">
+              <h1 class="text-primary font-semibold text-xl">
+                Desarrollador Backend
+              </h1>
+              <p class="w-full h-16">
+                Estamos en búsqueda de Desarrollador Backend para incorporarse al equipo de empresa líder en servicios tecnologicos.
+              </p>
+              <div class="flex flex-row">
+                <img
+                  src="./img/about_us/calendar_icon.png"
+                  class="w-4 h-4 mt-1 mr-2"
+                />
+                <p class="mr-4">21 NOV</p>
+                <img
+                  src="./img/about_us/clock_icon.png"
+                  class="w-4 h-4 mt-1 mr-2"
+                />
+                <p class="mr-4">Full-Time</p>
+                <img src="./img/about_us/path_icon.png" class="w-5 h-5 mr-2" />
+                <p class="mr-4">BS AS, Argentina</p>
+              </div>
+            </div>
+          </section>
+          <hr class="ml-4 mr-10 my-2" />
+          <section class="flex flex-row w-full mb-1 mt-1 ml-3">
+            <div class="relative mx-2 mr-4">
+              <img
+                src="https://media-exp1.licdn.com/dms/image/C4D0BAQFQGjXwWDU2UA/company-logo_200_200/0?e=1613606400&v=beta&t=kFgaA2wjO3rGWengWbBbfVBgltqiwQFs9fTc3qbmzs8"
+                class="w-40 h-32 rounded-md border-solid border mr-6"
+              />
+            </div>
+            <div class="w-11/12 mr-24">
+              <h1 class="text-primary font-semibold text-xl">
+                Fullstack Developer
+              </h1>
+              <p class="w-full h-16">
+                Somos una compañía IT con presencia en más de 20 locaciones entre Europa y América, y más de 6000 empleados.
+              </p>
+              <div class="flex flex-row">
+                <img
+                  src="./img/about_us/calendar_icon.png"
+                  class="w-4 h-4 mt-1 mr-2"
+                />
+                <p class="mr-4">19 NOV</p>
+                <img
+                  src="./img/about_us/clock_icon.png"
+                  class="w-4 h-4 mt-1 mr-2"
+                />
+                <p class="mr-4">Full-Time</p>
+                <img src="./img/about_us/path_icon.png" class="w-5 h-5 mr-2" />
+                <p class="mr-4">Rosario, Argentina</p>
+              </div>
+            </div>
+          </section>
+          <hr class="ml-4 mr-10 my-2" />
+          <section class="flex flex-row w-full mb-1 mt-1 ml-3">
+            <div class="relative mx-2 mr-4">
+              <img
+                src="https://media-exp1.licdn.com/dms/image/C4E0BAQEnmfa0Q39-9Q/company-logo_200_200/0?e=1613606400&v=beta&t=_26lYavQvO07bvgbgzCnC9Dy_U5inRWIpVEquGIHPyk"
+                class="w-40 h-32 rounded-md border-solid border mr-6"
+              />
+            </div>
+            <div class="w-11/12 mr-24">
+              <h1 class="text-primary font-semibold text-xl">Frontend 100% remoto</h1>
+              <p class="w-full h-16">
+                Se incorporan 2 Front End / 100 % remoto, para Importante Empresa Multinacional de Servicios de IT
+              </p>
+              <div class="flex flex-row">
+                <img
+                  src="./img/about_us/calendar_icon.png"
+                  class="w-4 h-4 mt-1 mr-2"
+                />
+                <p class="mr-4">20 NOV</p>
+                <img
+                  src="./img/about_us/clock_icon.png"
+                  class="w-4 h-4 mt-1 mr-2"
+                />
+                <p class="mr-4">Full-Time</p>
+                <img src="./img/about_us/path_icon.png" class="w-5 h-5 mr-2" />
+                <p class="mr-4">Buenos Aires, Argentina</p>
+              </div>
+            </div>
+          </section>
+          <hr class="ml-4 mr-10 my-2" />
+          <div class="flex justify-center h-16 pt-8 mb-5">
+            <button
+              class="primary-gradient rounded-md text-white w-8 flex justify-center"
+              onclick="change_page_1()">
+              <p class="mt-1">1</p>
+            </button>
+            <button
+              class="primary-gradient rounded-md text-white mx-2 w-8 flex justify-center"
+              >
+              <p class="mt-1">2</p>
+            </button>
+            <button
+              class="primary-gradient rounded-md text-white mx-5 w-20 flex justify-center"
+            >
+              <p class="mt-1">NEXT</p>
+            </button>
+          </div>
+        </div>
+        <!-- End Results page 2-->
       </div>
-      <!-- End Results -->
     </div>
+  </div>
 
     <div class="footer border-box text-center w-full text-white px-6">
       <div
@@ -445,6 +624,28 @@
       document.getElementById("nav-toggle").onclick = function () {
         document.getElementById("nav-content").classList.toggle("hidden");
       };
+
+      function change_page_1(){
+          
+          var page1 = document.getElementById('page_1');
+          var page2 = document.getElementById('page_2');
+
+          if (page1.style.display == 'none'){
+            page1.style.display = 'block';
+            page2.style.display = 'none';
+          }
+      }
+
+      function change_page_2(){
+          
+          var page1 = document.getElementById('page_1');
+          var page2 = document.getElementById('page_2');
+
+          if (page2.style.display == 'none'){
+            page2.style.display = 'block';
+            page1.style.display = 'none';
+          }
+      }
     </script>
   </body>
 </html>
